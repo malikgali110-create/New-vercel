@@ -1,0 +1,183 @@
+{
+  "collection": {
+    "name": "Legendary Animals Kingdom",
+    "description": "A majestic collection of 10,000 legendary animals with unique powers and rare traits. Each NFT represents a guardian of the ancient world with special abilities and mystical properties.",
+    "creator": "WildArt Studios",
+    "total_supply": 10000,
+    "blockchain": "XRPL",
+    "contract_address": "rNFTLegendaryAnimals123456789",
+    "royalties": 7.5,
+    "launch_date": "2024-01-15",
+    "website": "https://legendaryanimals.art",
+    "social_media": {
+      "twitter": "@LegendaryAnimalsNFT",
+      "discord": "https://discord.gg/legendaryanimals",
+      "instagram": "@legendaryanimals_nft"
+    }
+  },
+  "traits": {
+    "Species": {
+      "Lion": { "count": 520, "rarity": 5.2 },
+      "Dragon": { "count": 300, "rarity": 3.0 },
+      "Wolf": { "count": 800, "rarity": 8.0 },
+      "Eagle": { "count": 650, "rarity": 6.5 },
+      "Tiger": { "count": 450, "rarity": 4.5 },
+      "Phoenix": { "count": 180, "rarity": 1.8 },
+      "Unicorn": { "count": 120, "rarity": 1.2 },
+      "Griffin": { "count": 200, "rarity": 2.0 },
+      "Panther": { "count": 750, "rarity": 7.5 },
+      "Bear": { "count": 900, "rarity": 9.0 },
+      "Serpent": { "count": 600, "rarity": 6.0 },
+      "Falcon": { "count": 700, "rarity": 7.0 },
+      "Stag": { "count": 850, "rarity": 8.5 },
+      "Kraken": { "count": 90, "rarity": 0.9 },
+      "Pegasus": { "count": 150, "rarity": 1.5 }
+    },
+    "Element": {
+      "Fire": { "count": 1280, "rarity": 12.8 },
+      "Water": { "count": 1350, "rarity": 13.5 },
+      "Earth": { "count": 1420, "rarity": 14.2 },
+      "Air": { "count": 1300, "rarity": 13.0 },
+      "Lightning": { "count": 980, "rarity": 9.8 },
+      "Ice": { "count": 890, "rarity": 8.9 },
+      "Shadow": { "count": 750, "rarity": 7.5 },
+      "Light": { "count": 680, "rarity": 6.8 },
+      "Nature": { "count": 1200, "rarity": 12.0 },
+      "Crystal": { "count": 450, "rarity": 4.5 },
+      "Void": { "count": 320, "rarity": 3.2 },
+      "Cosmic": { "count": 180, "rarity": 1.8 },
+      "Plasma": { "count": 120, "rarity": 1.2 },
+      "Quantum": { "count": 70, "rarity": 0.7 }
+    },
+    "Power Level": {
+      "Common": { "count": 4500, "rarity": 45.0 },
+      "Uncommon": { "count": 2800, "rarity": 28.0 },
+      "Rare": { "count": 1800, "rarity": 18.0 },
+      "Epic": { "count": 700, "rarity": 7.0 },
+      "Legendary": { "count": 180, "rarity": 1.8 },
+      "Mythical": { "count": 20, "rarity": 0.2 }
+    },
+    "Background": {
+      "Mystic Forest": { "count": 870, "rarity": 8.7 },
+      "Ancient Temple": { "count": 650, "rarity": 6.5 },
+      "Crystal Cave": { "count": 580, "rarity": 5.8 },
+      "Volcanic Realm": { "count": 720, "rarity": 7.2 },
+      "Celestial Sky": { "count": 450, "rarity": 4.5 },
+      "Underwater Palace": { "count": 380, "rarity": 3.8 },
+      "Desert Oasis": { "count": 920, "rarity": 9.2 },
+      "Frozen Tundra": { "count": 680, "rarity": 6.8 },
+      "Enchanted Garden": { "count": 750, "rarity": 7.5 },
+      "Shadow Realm": { "count": 320, "rarity": 3.2 },
+      "Golden Plains": { "count": 1100, "rarity": 11.0 },
+      "Storm Clouds": { "count": 890, "rarity": 8.9 },
+      "Rainbow Bridge": { "count": 280, "rarity": 2.8 },
+      "Void Space": { "count": 150, "rarity": 1.5 },
+      "Cosmic Nebula": { "count": 80, "rarity": 0.8 }
+    },
+    "Accessories": {
+      "None": { "count": 3500, "rarity": 35.0 },
+      "Golden Crown": { "count": 150, "rarity": 1.5 },
+      "Silver Armor": { "count": 480, "rarity": 4.8 },
+      "Magic Amulet": { "count": 320, "rarity": 3.2 },
+      "Crystal Pendant": { "count": 280, "rarity": 2.8 },
+      "Warrior Helmet": { "count": 650, "rarity": 6.5 },
+      "Mystic Cloak": { "count": 420, "rarity": 4.2 },
+      "Power Gauntlets": { "count": 380, "rarity": 3.8 },
+      "Ancient Scroll": { "count": 520, "rarity": 5.2 },
+      "Elemental Orb": { "count": 290, "rarity": 2.9 },
+      "Legendary Sword": { "count": 180, "rarity": 1.8 },
+      "Divine Wings": { "count": 120, "rarity": 1.2 },
+      "Cosmic Ring": { "count": 80, "rarity": 0.8 },
+      "Time Crystal": { "count": 50, "rarity": 0.5 },
+      "Reality Gem": { "count": 20, "rarity": 0.2 }
+    }
+  },
+  "sample_nfts": [
+    {
+      "token_id": 1,
+      "name": "Mystic Fire Lion #1",
+      "description": "A legendary fire lion with the power to control flames and lead other creatures into battle.",
+      "image": "ipfs://QmFireLion1Hash",
+      "attributes": [
+        { "trait_type": "Species", "value": "Lion" },
+        { "trait_type": "Element", "value": "Fire" },
+        { "trait_type": "Power Level", "value": "Legendary" },
+        { "trait_type": "Background", "value": "Volcanic Realm" },
+        { "trait_type": "Accessories", "value": "Golden Crown" }
+      ],
+      "rarity_score": 95.8,
+      "rarity_rank": 1
+    },
+    {
+      "token_id": 2,
+      "name": "Crystal Water Dragon #2",
+      "description": "An ancient dragon with crystal scales that can manipulate water and ice.",
+      "image": "ipfs://QmCrystalDragon2Hash",
+      "attributes": [
+        { "trait_type": "Species", "value": "Dragon" },
+        { "trait_type": "Element", "value": "Water" },
+        { "trait_type": "Power Level", "value": "Epic" },
+        { "trait_type": "Background", "value": "Crystal Cave" },
+        { "trait_type": "Accessories", "value": "Crystal Pendant" }
+      ],
+      "rarity_score": 87.3,
+      "rarity_rank": 15
+    },
+    {
+      "token_id": 3,
+      "name": "Shadow Void Wolf #3",
+      "description": "A mysterious wolf that can phase through dimensions and control shadows.",
+      "image": "ipfs://QmShadowWolf3Hash",
+      "attributes": [
+        { "trait_type": "Species", "value": "Wolf" },
+        { "trait_type": "Element", "value": "Shadow" },
+        { "trait_type": "Power Level", "value": "Rare" },
+        { "trait_type": "Background", "value": "Shadow Realm" },
+        { "trait_type": "Accessories", "value": "Mystic Cloak" }
+      ],
+      "rarity_score": 72.1,
+      "rarity_rank": 45
+    }
+  ],
+  "minting_info": {
+    "mint_price": "15.0 XRP",
+    "max_supply": 10000,
+    "minted_count": 7834,
+    "mint_start_date": "2024-01-15T00:00:00Z",
+    "mint_end_date": "2024-12-31T23:59:59Z",
+    "presale_price": "12.0 XRP",
+    "public_sale_price": "15.0 XRP",
+    "max_per_wallet": 10,
+    "launching_fee": "500 XRP"
+  },
+  "utility": {
+    "staking_rewards": true,
+    "breeding_system": true,
+    "game_integration": true,
+    "exclusive_events": true,
+    "merchandise_discounts": true,
+    "dao_voting_rights": true
+  },
+  "roadmap": [
+    {
+      "phase": "Phase 1 - Launch",
+      "description": "Initial mint and community building",
+      "status": "completed"
+    },
+    {
+      "phase": "Phase 2 - Staking",
+      "description": "Staking system implementation",
+      "status": "in_progress"
+    },
+    {
+      "phase": "Phase 3 - Game",
+      "description": "Battle game development",
+      "status": "planned"
+    },
+    {
+      "phase": "Phase 4 - Breeding",
+      "description": "Breeding system for new generations",
+      "status": "planned"
+    }
+  ]
+}

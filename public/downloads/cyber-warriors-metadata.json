@@ -1,0 +1,121 @@
+{
+  "collection": {
+    "name": "Cyber Warriors Genesis",
+    "description": "The first generation of cybernetic warriors from the future. 5,000 unique digital soldiers with advanced AI and combat capabilities.",
+    "creator": "FutureTech Labs",
+    "total_supply": 5000,
+    "blockchain": "XRPL",
+    "contract_address": "rNFTCyberWarriors987654321",
+    "royalties": 10.0,
+    "launch_date": "2024-02-01",
+    "website": "https://cyberwarriors.tech",
+    "social_media": {
+      "twitter": "@CyberWarriorsNFT",
+      "discord": "https://discord.gg/cyberwarriors",
+      "telegram": "https://t.me/cyberwarriors"
+    }
+  },
+  "traits": {
+    "Armor Type": {
+      "Basic": { "count": 1500, "rarity": 30.0 },
+      "Advanced": { "count": 1200, "rarity": 24.0 },
+      "Elite": { "count": 900, "rarity": 18.0 },
+      "Legendary": { "count": 600, "rarity": 12.0 },
+      "Quantum": { "count": 400, "rarity": 8.0 },
+      "Nano": { "count": 250, "rarity": 5.0 },
+      "Plasma": { "count": 150, "rarity": 3.0 }
+    },
+    "Weapon": {
+      "Laser Rifle": { "count": 800, "rarity": 16.0 },
+      "Plasma Cannon": { "count": 600, "rarity": 12.0 },
+      "Energy Sword": { "count": 700, "rarity": 14.0 },
+      "Quantum Blade": { "count": 400, "rarity": 8.0 },
+      "Nano Disruptor": { "count": 350, "rarity": 7.0 },
+      "Photon Rifle": { "count": 500, "rarity": 10.0 },
+      "Gravity Hammer": { "count": 300, "rarity": 6.0 },
+      "Void Launcher": { "count": 200, "rarity": 4.0 },
+      "Reality Warper": { "count": 100, "rarity": 2.0 },
+      "Time Manipulator": { "count": 50, "rarity": 1.0 }
+    },
+    "AI Level": {
+      "Basic AI": { "count": 1000, "rarity": 20.0 },
+      "Enhanced AI": { "count": 800, "rarity": 16.0 },
+      "Advanced AI": { "count": 780, "rarity": 15.6 },
+      "Superior AI": { "count": 600, "rarity": 12.0 },
+      "Quantum AI": { "count": 400, "rarity": 8.0 },
+      "Sentient AI": { "count": 300, "rarity": 6.0 },
+      "Transcendent AI": { "count": 120, "rarity": 2.4 }
+    },
+    "Faction": {
+      "Neo Tokyo": { "count": 1120, "rarity": 22.4 },
+      "Cyber Berlin": { "count": 950, "rarity": 19.0 },
+      "Digital London": { "count": 850, "rarity": 17.0 },
+      "Virtual Moscow": { "count": 750, "rarity": 15.0 },
+      "Quantum Paris": { "count": 650, "rarity": 13.0 },
+      "Nano Seoul": { "count": 480, "rarity": 9.6 },
+      "Plasma Sydney": { "count": 200, "rarity": 4.0 }
+    },
+    "Enhancement": {
+      "None": { "count": 1500, "rarity": 30.0 },
+      "Speed Boost": { "count": 800, "rarity": 16.0 },
+      "Strength Amplifier": { "count": 700, "rarity": 14.0 },
+      "Shield Generator": { "count": 600, "rarity": 12.0 },
+      "Stealth Mode": { "count": 500, "rarity": 10.0 },
+      "Energy Regeneration": { "count": 400, "rarity": 8.0 },
+      "Time Dilation": { "count": 300, "rarity": 6.0 },
+      "Phase Shift": { "count": 150, "rarity": 3.0 },
+      "Reality Anchor": { "count": 50, "rarity": 1.0 }
+    }
+  },
+  "sample_nfts": [
+    {
+      "token_id": 1,
+      "name": "Quantum Commander #1",
+      "description": "Elite quantum-armored commander with reality manipulation capabilities.",
+      "image": "ipfs://QmQuantumCommander1Hash",
+      "attributes": [
+        { "trait_type": "Armor Type", "value": "Quantum" },
+        { "trait_type": "Weapon", "value": "Reality Warper" },
+        { "trait_type": "AI Level", "value": "Transcendent AI" },
+        { "trait_type": "Faction", "value": "Neo Tokyo" },
+        { "trait_type": "Enhancement", "value": "Reality Anchor" }
+      ],
+      "rarity_score": 98.5,
+      "rarity_rank": 1
+    },
+    {
+      "token_id": 2,
+      "name": "Plasma Assassin #2",
+      "description": "Stealth specialist with plasma weaponry and advanced cloaking systems.",
+      "image": "ipfs://QmPlasmaAssassin2Hash",
+      "attributes": [
+        { "trait_type": "Armor Type", "value": "Plasma" },
+        { "trait_type": "Weapon", "value": "Plasma Cannon" },
+        { "trait_type": "AI Level", "value": "Advanced AI" },
+        { "trait_type": "Faction", "value": "Cyber Berlin" },
+        { "trait_type": "Enhancement", "value": "Stealth Mode" }
+      ],
+      "rarity_score": 85.2,
+      "rarity_rank": 12
+    }
+  ],
+  "minting_info": {
+    "mint_price": "28.0 XRP",
+    "max_supply": 5000,
+    "minted_count": 4567,
+    "mint_start_date": "2024-02-01T00:00:00Z",
+    "mint_end_date": "2024-11-30T23:59:59Z",
+    "presale_price": "22.0 XRP",
+    "public_sale_price": "28.0 XRP",
+    "max_per_wallet": 5,
+    "launching_fee": "750 XRP"
+  },
+  "utility": {
+    "battle_arena": true,
+    "weapon_upgrades": true,
+    "faction_wars": true,
+    "ai_training": true,
+    "tournament_access": true,
+    "exclusive_missions": true
+  }
+}

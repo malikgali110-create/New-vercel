@@ -1,0 +1,114 @@
+{
+  "collection": {
+    "name": "Abstract Dreams",
+    "description": "A mesmerizing collection of 2,000 abstract artworks that blend reality with imagination. Each piece tells a unique story through colors and forms.",
+    "creator": "DreamArt Collective",
+    "total_supply": 2000,
+    "blockchain": "XRPL",
+    "contract_address": "rNFTAbstractDreams456789123",
+    "royalties": 5.0,
+    "launch_date": "2024-03-10",
+    "website": "https://abstractdreams.art",
+    "social_media": {
+      "twitter": "@AbstractDreamsNFT",
+      "instagram": "@abstract_dreams_art",
+      "behance": "https://behance.net/abstractdreams"
+    }
+  },
+  "traits": {
+    "Color Palette": {
+      "Monochrome": { "count": 200, "rarity": 10.0 },
+      "Warm Tones": { "count": 350, "rarity": 17.5 },
+      "Cool Tones": { "count": 400, "rarity": 20.0 },
+      "Vibrant": { "count": 510, "rarity": 25.5 },
+      "Pastel": { "count": 300, "rarity": 15.0 },
+      "Neon": { "count": 180, "rarity": 9.0 },
+      "Earth Tones": { "count": 60, "rarity": 3.0 }
+    },
+    "Style": {
+      "Geometric": { "count": 450, "rarity": 22.5 },
+      "Fluid": { "count": 374, "rarity": 18.7 },
+      "Textured": { "count": 320, "rarity": 16.0 },
+      "Minimalist": { "count": 280, "rarity": 14.0 },
+      "Complex": { "count": 250, "rarity": 12.5 },
+      "Organic": { "count": 200, "rarity": 10.0 },
+      "Digital Glitch": { "count": 126, "rarity": 6.3 }
+    },
+    "Mood": {
+      "Calm": { "count": 400, "rarity": 20.0 },
+      "Energetic": { "count": 246, "rarity": 12.3 },
+      "Mysterious": { "count": 300, "rarity": 15.0 },
+      "Joyful": { "count": 350, "rarity": 17.5 },
+      "Melancholic": { "count": 280, "rarity": 14.0 },
+      "Intense": { "count": 220, "rarity": 11.0 },
+      "Ethereal": { "count": 180, "rarity": 9.0 },
+      "Chaotic": { "count": 24, "rarity": 1.2 }
+    },
+    "Complexity": {
+      "Simple": { "count": 600, "rarity": 30.0 },
+      "Medium": { "count": 700, "rarity": 35.0 },
+      "Complex": { "count": 522, "rarity": 26.1 },
+      "High": { "count": 178, "rarity": 8.9 }
+    },
+    "Technique": {
+      "Digital Painting": { "count": 500, "rarity": 25.0 },
+      "Vector Art": { "count": 400, "rarity": 20.0 },
+      "Generative Art": { "count": 350, "rarity": 17.5 },
+      "Mixed Media": { "count": 300, "rarity": 15.0 },
+      "3D Render": { "count": 250, "rarity": 12.5 },
+      "Fractal Art": { "count": 150, "rarity": 7.5 },
+      "AI Assisted": { "count": 50, "rarity": 2.5 }
+    }
+  },
+  "sample_nfts": [
+    {
+      "token_id": 1,
+      "name": "Ethereal Chaos #1",
+      "description": "A rare chaotic composition with ethereal qualities and AI-assisted generation.",
+      "image": "ipfs://QmEtherealChaos1Hash",
+      "attributes": [
+        { "trait_type": "Color Palette", "value": "Neon" },
+        { "trait_type": "Style", "value": "Digital Glitch" },
+        { "trait_type": "Mood", "value": "Chaotic" },
+        { "trait_type": "Complexity", "value": "High" },
+        { "trait_type": "Technique", "value": "AI Assisted" }
+      ],
+      "rarity_score": 96.8,
+      "rarity_rank": 1
+    },
+    {
+      "token_id": 2,
+      "name": "Vibrant Flow #2",
+      "description": "An energetic fluid composition with vibrant colors and complex patterns.",
+      "image": "ipfs://QmVibrantFlow2Hash",
+      "attributes": [
+        { "trait_type": "Color Palette", "value": "Vibrant" },
+        { "trait_type": "Style", "value": "Fluid" },
+        { "trait_type": "Mood", "value": "Energetic" },
+        { "trait_type": "Complexity", "value": "Complex" },
+        { "trait_type": "Technique", "value": "Digital Painting" }
+      ],
+      "rarity_score": 78.5,
+      "rarity_rank": 25
+    }
+  ],
+  "minting_info": {
+    "mint_price": "12.0 XRP",
+    "max_supply": 2000,
+    "minted_count": 1876,
+    "mint_start_date": "2024-03-10T00:00:00Z",
+    "mint_end_date": "2024-09-30T23:59:59Z",
+    "presale_price": "9.0 XRP",
+    "public_sale_price": "12.0 XRP",
+    "max_per_wallet": 20,
+    "launching_fee": "300 XRP"
+  },
+  "utility": {
+    "gallery_exhibitions": true,
+    "print_licensing": true,
+    "commercial_usage": true,
+    "artist_collaborations": true,
+    "exclusive_drops": true,
+    "community_voting": true
+  }
+}
