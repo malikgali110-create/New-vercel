@@ -253,7 +253,7 @@ export default function AccountPage() {
                               <h4 className="font-medium">{item.title}</h4>
                             </div>
                             <p className="text-sm text-muted-foreground">by {item.artist}</p>
-                            {item.type === "bundle" && item.bundleContents && (
+                            {item.type === "bundle" && "bundleContents" in item && item.bundleContents && (
                               <p className="text-xs text-muted-foreground mt-1">{item.bundleContents}</p>
                             )}
                             {item.type === "print" && (
@@ -319,7 +319,7 @@ export default function AccountPage() {
                             </Badge>
                           </div>
                           <p className="text-sm text-muted-foreground mb-1">by {item.artist}</p>
-                          {item.type === "bundle" && item.bundleContents && (
+                          {item.type === "bundle" && "bundleContents" in item && item.bundleContents && (
                             <p className="text-xs text-muted-foreground">{item.bundleContents}</p>
                           )}
                         </div>
