@@ -25,8 +25,59 @@ import {
 } from "lucide-react"
 import { useHolder } from "@/contexts/holder-context"
 
+// Type definitions for discriminated union
+type DigitalItem = {
+  id: string;
+  title: string;
+  artist: string;
+  type: "digital";
+  license: string;
+  image: string;
+  downloadUrl: string;
+}
+
+type BundleItem = {
+  id: string;
+  title: string;
+  artist: string;
+  type: "bundle";
+  license: string;
+  image: string;
+  downloadUrl: string;
+  bundleContents?: string;
+}
+
+type PrintItem = {
+  id: string;
+  title: string;
+  artist: string;
+  type: "print";
+  size: string;
+  material: string;
+  frame?: string;
+  image: string;
+}
+
+type OrderItem = DigitalItem | BundleItem | PrintItem;
+
+type Order = {
+  id: string;
+  date: string;
+  status: "completed" | "shipped" | "processing";
+  total: number;
+  totalXRP: number;
+  items: OrderItem[];
+  trackingNumber?: string;
+  estimatedDelivery?: string;
+}
+
+// Type guard function
+function isPrintItem(item: OrderItem): item is PrintItem {
+  return item.type === "print";
+}
+
 // Mock order data
-const mockOrders = [
+const mockOrders: Order[] = [
   {
     id: "ORD-2024-001",
     date: "2024-01-15",
@@ -256,7 +307,7 @@ export default function AccountPage() {
                             {item.type === "bundle" && "bundleContents" in item && item.bundleContents && (
                               <p className="text-xs text-muted-foreground mt-1">{item.bundleContents}</p>
                             )}
-                            {item.type === "print" && (
+                            {isPrintItem(item) && (
                               <p className="text-xs text-muted-foreground mt-1">
                                 {item.size} • {item.material} {item.frame && `• ${item.frame}`}
                               </p>
@@ -319,7 +370,7 @@ export default function AccountPage() {
                             </Badge>
                           </div>
                           <p className="text-sm text-muted-foreground mb-1">by {item.artist}</p>
-                          {item.type === "bundle" && "bundleContents" in item && item.bundleContents && (
+                          {item.type === "bundle" && item.bundleContents && (
                             <p className="text-xs text-muted-foreground">{item.bundleContents}</p>
                           )}
                         </div>
