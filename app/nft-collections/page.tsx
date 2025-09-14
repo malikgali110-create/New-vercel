@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { DemoPopup } from "@/components/demo-popup"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -643,6 +644,7 @@ export default function NFTCollectionsPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <DemoPopup />
       <div className="bg-primary text-primary-foreground py-2 px-4 text-center text-sm font-medium">
         Powered by <strong>EMOTION CAPSULES</strong> • XRPL-only Payments via XUMM
       </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { DemoPopup } from '@/components/demo-popup';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -191,6 +192,7 @@ export default function CreateBundleStudio() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-green-50">
+      <DemoPopup />
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="mb-8">

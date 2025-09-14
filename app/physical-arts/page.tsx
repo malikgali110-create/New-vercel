@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { DemoPopup } from "@/components/demo-popup"
 import { ProductGrid } from "@/components/product-grid"
 import { ProductFilters } from "@/components/product-filters"
 import { Button } from "@/components/ui/button"
@@ -156,6 +157,7 @@ export default function PhysicalArtsPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <DemoPopup />
       {/* Header */}
       <header className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -205,7 +207,7 @@ export default function PhysicalArtsPage() {
 
         {/* Products Grid */}
         {filteredProducts.length > 0 ? (
-          <ProductGrid products={filteredProducts} columns={4} />
+          <ProductGrid products={filteredProducts} columns={5} />
         ) : (
           <div className="text-center py-12">
             <p className="text-muted-foreground text-lg">No artworks found matching your criteria.</p>

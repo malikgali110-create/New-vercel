@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { DemoPopup } from "@/components/demo-popup"
 import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -27,35 +28,35 @@ interface NFTCollection {
 const nftCollections: NFTCollection[] = [
   {
     id: "1",
-    name: "Pixel Dogs Collection",
-    description: "10K unique pixel art dogs with rare traits and accessories",
+    name: "Cyber Punks Collection",
+    description: "Futuristic cyberpunk-themed NFT collection with 10,000 unique digital avatars featuring neon aesthetics, robotic elements, and dystopian themes.",
     totalItems: 10000,
     traits: 150,
-    rarity: "Ultra Rare",
+    rarity: "Legendary",
     price: 2.500,
     originalPrice: 5.000,
     image: "/api/placeholder/300/300",
-    gradient: "from-purple-400 via-pink-500 to-red-500",
-    category: "Animals",
+    gradient: "from-purple-600 via-pink-500 to-red-500",
+    category: "Characters",
     isAvailable: true,
-    downloads: 1247,
-    rating: 4.9
+    downloads: 1250,
+    rating: 4.8
   },
   {
     id: "2",
-    name: "Crypto Punks Reimagined",
-    description: "Modern take on classic punks with 8K unique characters",
-    totalItems: 8000,
-    traits: 200,
-    rarity: "Legendary",
-    price: 15.000,
-    originalPrice: 25.000,
+    name: "Abstract Dreams",
+    description: "Mesmerizing abstract art collection featuring vibrant colors, fluid patterns, and mathematical precision in every piece.",
+    totalItems: 5000,
+    traits: 80,
+    rarity: "Rare",
+    price: 1.800,
+    originalPrice: 3.000,
     image: "/api/placeholder/300/300",
-    gradient: "from-blue-400 via-purple-500 to-pink-500",
-    category: "Characters",
+    gradient: "from-blue-500 via-teal-500 to-cyan-500",
+    category: "Art",
     isAvailable: true,
-    downloads: 892,
-    rating: 4.8
+    downloads: 890,
+    rating: 4.6
   },
   {
     id: "3",
@@ -225,6 +226,7 @@ export default function NFTArtPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <DemoPopup />
       <Navigation />
       
       {/* Hero Section */}
@@ -326,7 +328,7 @@ export default function NFTArtPage() {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
             {filteredCollections.map((collection) => (
               <Card key={collection.id} className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className={`h-48 bg-gradient-to-br ${collection.gradient} relative`}>

@@ -1,53 +1,78 @@
-/* EMC Store Enhanced Brand Color Scheme */
+/* Emotion Capsules - Visual Design System */
 :root {
-  /* Primary Brand Colors - Vibrant Blue */
-  --brand-primary: #0066ff; /* Electric Blue */
-  --brand-primary-light: #3385ff;
-  --brand-primary-dark: #0052cc;
-  --brand-primary-50: #e6f2ff;
-  --brand-primary-100: #b3d9ff;
-  --brand-primary-200: #80c0ff;
+  /* Background Colors - Warm Off-White */
+  --bg-primary: #fefcf9; /* Warm off-white */
+  --bg-secondary: #f9f6f2; /* Slightly warmer off-white */
+  --bg-tertiary: #f5f2ed; /* Warmer neutral */
   
-  /* Secondary Brand Colors - Rich Purple */
-  --brand-secondary: #8b5cf6; /* Vibrant Purple */
-  --brand-secondary-light: #a78bfa;
-  --brand-secondary-dark: #7c3aed;
-  --brand-secondary-50: #f3f0ff;
-  --brand-secondary-100: #e0d9ff;
-  --brand-secondary-200: #ccc2ff;
+  /* Text Colors - Near Black */
+  --text-primary: #1a1a1a; /* Near-black ink */
+  --text-secondary: #2d2d2d; /* Slightly lighter */
+  --text-muted: #666666; /* Medium gray for secondary text */
   
-  /* Accent Colors - Warm Orange */
-  --brand-accent: #ff6b35; /* Vibrant Orange */
-  --brand-accent-light: #ff8c5a;
-  --brand-accent-dark: #e55a2b;
-  --brand-accent-50: #fff4f0;
-  --brand-accent-100: #ffe0d1;
-  --brand-accent-200: #ffccb3;
+  /* Cool Gray Palette */
+  --gray-50: #f8fafc;
+  --gray-100: #f1f5f9;
+  --gray-200: #e2e8f0;
+  --gray-300: #cbd5e1;
+  --gray-400: #94a3b8;
+  --gray-500: #64748b;
+  --gray-600: #475569;
+  --gray-700: #334155;
+  --gray-800: #1e293b;
+  --gray-900: #0f172a;
   
-  /* Success/Green - Fresh Mint */
-  --brand-success: #00d4aa; /* Mint Green */
-  --brand-success-light: #33ddbb;
-  --brand-success-dark: #00b894;
-  --brand-success-50: #e6fdf9;
-  --brand-success-100: #b3f5e6;
+  /* Brand Orange - Primary Accent */
+  --orange-50: #fff7ed;
+  --orange-100: #ffedd5;
+  --orange-200: #fed7aa;
+  --orange-300: #fdba74;
+  --orange-400: #fb923c;
+  --orange-500: #f97316; /* Primary orange */
+  --orange-600: #ea580c;
+  --orange-700: #c2410c;
+  --orange-800: #9a3412;
+  --orange-900: #7c2d12;
   
-  /* Error/Red - Coral Red */
-  --brand-error: #ff4757; /* Coral Red */
-  --brand-error-light: #ff6b7a;
-  --brand-error-dark: #e84057;
-  --brand-error-50: #fff0f2;
-  --brand-error-100: #ffd6db;
+  /* Aqua XRPL - Secondary Accent */
+  --aqua-50: #ecfeff;
+  --aqua-100: #cffafe;
+  --aqua-200: #a5f3fc;
+  --aqua-300: #67e8f9;
+  --aqua-400: #22d3ee;
+  --aqua-500: #06b6d4; /* XRPL aqua */
+  --aqua-600: #0891b2;
+  --aqua-700: #0e7490;
+  --aqua-800: #155e75;
+  --aqua-900: #164e63;
   
-  /* Neutral Colors - Warmer Grays */
-  --brand-gray-50: #fafbfc;
-  --brand-gray-100: #f4f6f8;
-  --brand-gray-200: #e8ecf0;
-  --brand-gray-300: #d6dce5;
-  --brand-gray-400: #a8b2c1;
-  --brand-gray-500: #7a8699;
-  --brand-gray-600: #5c6b7d;
-  --brand-gray-700: #455066;
-  --brand-gray-800: #2d3748;
+  /* Gold - Premium */
+  --gold-50: #fffbeb;
+  --gold-100: #fef3c7;
+  --gold-200: #fde68a;
+  --gold-300: #fcd34d;
+  --gold-400: #fbbf24;
+  --gold-500: #f59e0b; /* Premium gold */
+  --gold-600: #d97706;
+  --gold-700: #b45309;
+  --gold-800: #92400e;
+  --gold-900: #78350f;
+  
+  /* Success/Error States */
+  --success-50: #f0fdf4;
+  --success-500: #22c55e;
+  --success-600: #16a34a;
+  
+  --error-50: #fef2f2;
+  --error-500: #ef4444;
+  --error-600: #dc2626;
+  
+  /* Legacy mappings for existing components */
+  --brand-primary: var(--orange-500);
+  --brand-secondary: var(--aqua-500);
+  --brand-accent: var(--gold-500);
+  --brand-success: var(--success-500);
+  --brand-error: var(--error-500);
   --brand-gray-900: #1a202c;
   
   /* Background Colors - Enhanced */

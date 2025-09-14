@@ -34,34 +34,36 @@ export default function HomePage() {
     <div>
       <DemoPopup />
       <div className="min-h-screen bg-white relative pt-16">
-        <div className="bg-brand-primary text-white py-2 px-4 text-center text-sm font-medium relative z-10">
+        <div className="bg-orange-600 text-white py-2 px-4 text-center text-sm font-medium relative z-10">
           Powered by <strong>EMOTION CAPSULES</strong> • XRPL-only Payments via XUMM
         </div>
 
         {/* Categories Bar */}
-        <div className="bg-brand-secondary py-2">
+        <div className="bg-gray-800 py-2">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-center space-x-6 overflow-x-auto">
-              <div className="flex items-center space-x-1 text-white hover:text-brand-accent transition-colors px-3 py-1 rounded-lg hover:bg-white/10">
+              <div className="flex items-center space-x-1 text-white hover:text-yellow-300 transition-colors px-3 py-1 rounded-lg hover:bg-white/10">
                 <span className="font-medium">All Categories</span>
               </div>
               
-              <a href="#" className="text-white hover:text-brand-accent transition-colors px-3 py-1 rounded-lg hover:bg-white/10 whitespace-nowrap">
-                <span className="flex items-center space-x-1">
-                  <span>💎 NFT Bundles</span>
-                  <span className="text-xs bg-yellow-400 text-black px-2 py-1 rounded-full font-bold">Exclusive</span>
+              <Link href="/nft-bundles" className="text-white hover:text-purple-300 transition-all duration-300 px-4 py-2 rounded-lg hover:bg-gradient-to-r hover:from-purple-600/30 hover:to-blue-600/30 hover:shadow-lg whitespace-nowrap font-medium border border-purple-400/20 hover:border-purple-300/40">
+                <span className="flex items-center space-x-2">
+                  <span className="text-purple-200">💎</span>
+                  <span>NFT Bundles</span>
+                  <span className="text-xs bg-gradient-to-r from-purple-500 to-blue-500 text-white px-2 py-1 rounded-full font-bold shadow-sm">Premium</span>
                 </span>
-              </a>
-              <a href="#" className="text-white hover:text-orange-200 transition-colors px-3 py-1 rounded-lg hover:bg-white/10 whitespace-nowrap">🎨 Digital Art</a>
-              <a href="#" className="text-white hover:text-orange-200 transition-colors px-3 py-1 rounded-lg hover:bg-white/10 whitespace-nowrap">🖼️ Print-on-Demand</a>
-              <a href="#" className="text-white hover:text-orange-200 transition-colors px-3 py-1 rounded-lg hover:bg-white/10 whitespace-nowrap">✋ Handmade</a>
-              <a href="#" className="text-white hover:text-orange-200 transition-colors px-3 py-1 rounded-lg hover:bg-white/10 whitespace-nowrap">🎭 Characters</a>
-              <a href="#" className="text-white hover:text-orange-200 transition-colors px-3 py-1 rounded-lg hover:bg-white/10 whitespace-nowrap">🌟 Abstract</a>
-              <a href="#" className="text-white hover:text-orange-200 transition-colors px-3 py-1 rounded-lg hover:bg-white/10 whitespace-nowrap">🏞️ Landscape</a>
-              <a href="#" className="text-white hover:text-orange-200 transition-colors px-3 py-1 rounded-lg hover:bg-white/10 whitespace-nowrap">👤 Portrait</a>
-              <a href="#" className="text-white hover:text-orange-200 transition-colors px-3 py-1 rounded-lg hover:bg-white/10 whitespace-nowrap">🎪 Pop Art</a>
-              <a href="#" className="text-white hover:text-orange-200 transition-colors px-3 py-1 rounded-lg hover:bg-white/10 whitespace-nowrap">🔮 Fantasy</a>
-              <a href="#" className="text-white hover:text-orange-200 transition-colors px-3 py-1 rounded-lg hover:bg-white/10 whitespace-nowrap">🤖 Sci-Fi</a>
+              </Link>
+              <Link href="/nft-art" className="text-white hover:text-yellow-300 transition-colors px-3 py-1 rounded-lg hover:bg-gradient-to-r hover:from-orange-500/20 hover:to-yellow-500/20 whitespace-nowrap font-medium shadow-sm">🎨 NFT Art</Link>
+              <Link href="/digital-art" className="text-white hover:text-blue-300 transition-colors px-3 py-1 rounded-lg hover:bg-gradient-to-r hover:from-blue-500/20 hover:to-cyan-500/20 whitespace-nowrap font-medium shadow-sm">🎨 Digital Art</Link>
+              <Link href="/print-products" className="text-white hover:text-green-300 transition-colors px-3 py-1 rounded-lg hover:bg-gradient-to-r hover:from-green-500/20 hover:to-emerald-500/20 whitespace-nowrap font-medium shadow-sm">🖼️ Print-on-Demand</Link>
+              <Link href="/handmade-art" className="text-white hover:text-pink-300 transition-colors px-3 py-1 rounded-lg hover:bg-gradient-to-r hover:from-pink-500/20 hover:to-rose-500/20 whitespace-nowrap font-medium shadow-sm">✋ Handmade</Link>
+              <Link href="/categories/characters" className="text-white hover:text-purple-300 transition-colors px-3 py-1 rounded-lg hover:bg-gradient-to-r hover:from-purple-500/20 hover:to-violet-500/20 whitespace-nowrap font-medium shadow-sm">🎭 Characters</Link>
+              <Link href="/categories/abstract" className="text-white hover:text-indigo-300 transition-colors px-3 py-1 rounded-lg hover:bg-gradient-to-r hover:from-indigo-500/20 hover:to-blue-500/20 whitespace-nowrap font-medium shadow-sm">🌟 Abstract</Link>
+              <Link href="/categories/landscape" className="text-white hover:text-teal-300 transition-colors px-3 py-1 rounded-lg hover:bg-gradient-to-r hover:from-teal-500/20 hover:to-cyan-500/20 whitespace-nowrap font-medium shadow-sm">🏞️ Landscape</Link>
+              <Link href="/categories/portrait" className="text-white hover:text-amber-300 transition-colors px-3 py-1 rounded-lg hover:bg-gradient-to-r hover:from-amber-500/20 hover:to-orange-500/20 whitespace-nowrap font-medium shadow-sm">👤 Portrait</Link>
+              <Link href="/categories/pop-art" className="text-white hover:text-red-300 transition-colors px-3 py-1 rounded-lg hover:bg-gradient-to-r hover:from-red-500/20 hover:to-pink-500/20 whitespace-nowrap font-medium shadow-sm">🎪 Pop Art</Link>
+              <Link href="/categories/fantasy" className="text-white hover:text-violet-300 transition-colors px-3 py-1 rounded-lg hover:bg-gradient-to-r hover:from-violet-500/20 hover:to-purple-500/20 whitespace-nowrap font-medium shadow-sm">🔮 Fantasy</Link>
+              <Link href="/categories/sci-fi" className="text-white hover:text-cyan-300 transition-colors px-3 py-1 rounded-lg hover:bg-gradient-to-r hover:from-cyan-500/20 hover:to-blue-500/20 whitespace-nowrap font-medium shadow-sm">🤖 Sci-Fi</Link>
             </div>
           </div>
         </div>
@@ -69,57 +71,117 @@ export default function HomePage() {
 
 
         <main className="relative">
-          <section className="relative py-20 px-4 overflow-hidden">
-            <div className="absolute inset-0 bg-orange-50"></div>
-            {/* Background Art Icons */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-10 left-10 text-orange-400"><Palette className="h-8 w-8" /></div>
-              <div className="absolute top-20 right-20 text-green-400"><Brush className="h-6 w-6" /></div>
-              <div className="absolute bottom-20 left-20 text-sky-400"><Sparkles className="h-10 w-10" /></div>
-              <div className="absolute top-40 left-1/3 text-orange-300"><Paintbrush className="h-7 w-7" /></div>
-              <div className="absolute bottom-40 right-1/3 text-green-300"><Feather className="h-9 w-9" /></div>
-              <div className="absolute top-60 right-10 text-sky-300"><Layers className="h-8 w-8" /></div>
+          <section className="relative py-24 px-4 overflow-hidden min-h-[90vh] flex items-center">
+            {/* Enhanced Background with Gradient */}
+            <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-white to-green-50"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-orange-100/30 via-transparent to-green-100/30"></div>
+            
+            {/* Animated Background Art Icons */}
+            <div className="absolute inset-0 opacity-15">
+              <div className="absolute top-10 left-10 text-orange-400 animate-pulse"><Palette className="h-12 w-12" /></div>
+              <div className="absolute top-20 right-20 text-green-400 animate-bounce"><Brush className="h-8 w-8" /></div>
+              <div className="absolute bottom-20 left-20 text-sky-400 animate-pulse"><Sparkles className="h-14 w-14" /></div>
+              <div className="absolute top-40 left-1/3 text-orange-300 animate-bounce"><Paintbrush className="h-10 w-10" /></div>
+              <div className="absolute bottom-40 right-1/3 text-green-300 animate-pulse"><Feather className="h-12 w-12" /></div>
+              <div className="absolute top-60 right-10 text-sky-300 animate-bounce"><Layers className="h-11 w-11" /></div>
+              <div className="absolute top-1/2 left-10 text-purple-300 animate-pulse"><Star className="h-9 w-9" /></div>
+              <div className="absolute bottom-10 right-1/4 text-pink-300 animate-bounce"><Globe className="h-10 w-10" /></div>
             </div>
+            
+            {/* Floating Elements */}
+            <div className="absolute inset-0 overflow-hidden">
+              <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-orange-200/20 rounded-full blur-xl animate-pulse"></div>
+              <div className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-green-200/20 rounded-full blur-xl animate-pulse delay-1000"></div>
+              <div className="absolute top-1/2 right-1/3 w-24 h-24 bg-sky-200/20 rounded-full blur-xl animate-pulse delay-500"></div>
+            </div>
+            
             <div className="container mx-auto relative z-10">
-              <div className="text-center max-w-4xl mx-auto">
-                <Badge className="mb-6 bg-green-100 text-green-800 border-green-200 hover:bg-green-200">
-                  🎨 Creative Marketplace
-                </Badge>
-                <h1 className="text-5xl md:text-7xl font-bold mb-6 text-orange-600">
+              <div className="text-center max-w-5xl mx-auto">
+                <div className="flex justify-center mb-8">
+                  <Badge className="mb-6 bg-gradient-to-r from-green-100 to-orange-100 text-green-800 border-green-200 hover:bg-green-200 px-6 py-2 text-lg font-semibold animate-pulse">
+                    ✨ Premium Creative Marketplace ✨
+                  </Badge>
+                </div>
+                
+                <h1 className="text-6xl md:text-8xl lg:text-9xl font-black mb-8 bg-gradient-to-r from-orange-600 via-green-600 to-sky-600 bg-clip-text text-transparent leading-tight">
                   Emotion Capsules
                 </h1>
-                <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
-                  Premium Digital Art & NFT Bundle Store - Exclusive collections with full commercial rights.
-                  <br className="hidden md:block" />
-                  Pay in XRP via XUMM, download instantly, own forever.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                  <Button size="lg" className="bg-gradient-to-r from-orange-600 to-green-600 hover:from-orange-700 hover:to-green-700 text-white px-8 py-3">
-                    <Palette className="mr-2 h-5 w-5" />
-                    Browse Exclusive Bundles
+                
+                <div className="mb-8">
+                  <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-4 leading-tight">
+                    🎨 One Art, Unlimited Formats
+                  </p>
+                  <p className="text-lg md:text-xl text-gray-600 mb-6 leading-relaxed max-w-4xl mx-auto">
+                    Premium Digital Art Collections • NFT Bundles with Commercial Rights • Print-on-Demand
+                    <br className="hidden md:block" />
+                    💎 Pay in XRP via XUMM • ⚡ Download Instantly • 🔒 Own Forever
+                  </p>
+                </div>
+                
+                <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+                  <Button size="lg" className="bg-gradient-to-r from-orange-600 via-green-600 to-sky-600 hover:from-orange-700 hover:via-green-700 hover:to-sky-700 text-white px-10 py-4 text-lg font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300">
+                    <Sparkles className="mr-3 h-6 w-6" />
+                    🚀 Explore Premium Bundles
                   </Button>
-                  <Button size="lg" variant="outline" className="border-brand-primary text-brand-primary hover:bg-brand-light px-8 py-3">
-                    <Sparkles className="mr-2 h-5 w-5" />
-                    Pay XRP & Download
+                  <Button size="lg" variant="outline" className="border-2 border-orange-500 text-orange-600 hover:bg-orange-50 hover:border-orange-600 px-10 py-4 text-lg font-bold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                    <Globe className="mr-3 h-6 w-6" />
+                    💎 Connect XUMM Wallet
                   </Button>
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
-                  <Badge variant="secondary" className="bg-brand-light text-brand-primary py-2 px-4">
-                    <Star className="mr-1 h-4 w-4" />
-                    Premium Quality
-                  </Badge>
-                  <Badge variant="secondary" className="bg-brand-success-light text-brand-success py-2 px-4">
-                    <Shield className="mr-1 h-4 w-4" />
-                    Secure Payments
-                  </Badge>
-                  <Badge variant="secondary" className="bg-brand-light text-brand-primary py-2 px-4">
-                    <Globe className="mr-1 h-4 w-4" />
-                    Global Shipping
-                  </Badge>
-                  <Badge variant="secondary" className="bg-brand-accent-light text-brand-accent py-2 px-4">
-                    <TrendingUp className="mr-1 h-4 w-4" />
-                    Trending Now
-                  </Badge>
+                
+                {/* Enhanced Feature Badges */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                  <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl p-4 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                    <div className="flex items-center justify-center mb-2">
+                      <Star className="h-8 w-8 text-orange-600" />
+                    </div>
+                    <h3 className="font-bold text-orange-800 text-sm mb-1">Premium Quality</h3>
+                    <p className="text-xs text-orange-700">High-res artworks</p>
+                  </div>
+                  
+                  <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-2xl p-4 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                    <div className="flex items-center justify-center mb-2">
+                      <Shield className="h-8 w-8 text-green-600" />
+                    </div>
+                    <h3 className="font-bold text-green-800 text-sm mb-1">XRPL Secure</h3>
+                    <p className="text-xs text-green-700">Blockchain payments</p>
+                  </div>
+                  
+                  <div className="bg-gradient-to-br from-sky-100 to-sky-200 rounded-2xl p-4 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                    <div className="flex items-center justify-center mb-2">
+                      <Globe className="h-8 w-8 text-sky-600" />
+                    </div>
+                    <h3 className="font-bold text-sky-800 text-sm mb-1">Global Access</h3>
+                    <p className="text-xs text-sky-700">Worldwide delivery</p>
+                  </div>
+                  
+                  <div className="bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl p-4 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                    <div className="flex items-center justify-center mb-2">
+                      <TrendingUp className="h-8 w-8 text-purple-600" />
+                    </div>
+                    <h3 className="font-bold text-purple-800 text-sm mb-1">Trending Now</h3>
+                    <p className="text-xs text-purple-700">Hot collections</p>
+                  </div>
+                </div>
+                
+                {/* Stats Section */}
+                <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
+                  <div className="text-center">
+                    <div className="text-3xl md:text-4xl font-black text-orange-600 mb-2">10K+</div>
+                    <div className="text-sm text-gray-600 font-medium">Digital Assets</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl md:text-4xl font-black text-green-600 mb-2">500+</div>
+                    <div className="text-sm text-gray-600 font-medium">NFT Bundles</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl md:text-4xl font-black text-sky-600 mb-2">50+</div>
+                    <div className="text-sm text-gray-600 font-medium">Print Options</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl md:text-4xl font-black text-purple-600 mb-2">24/7</div>
+                    <div className="text-sm text-gray-600 font-medium">Instant Access</div>
+                  </div>
                 </div>
               </div>
             </div>

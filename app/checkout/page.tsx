@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { DemoPopup } from "@/components/demo-popup"
 import { useCart } from "@/contexts/cart-context"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -80,6 +81,7 @@ export default function CheckoutPage() {
   if (state.items.length === 0) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
+        <DemoPopup />
         <div className="text-center">
           <h1 className="text-2xl font-bold text-foreground mb-4">Your cart is empty</h1>
           <p className="text-muted-foreground mb-6">Add some artworks to proceed with checkout</p>
@@ -100,6 +102,7 @@ export default function CheckoutPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <DemoPopup />
       {/* Header */}
       <header className="border-b bg-card/50 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4">

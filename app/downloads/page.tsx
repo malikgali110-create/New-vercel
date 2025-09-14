@@ -1,3 +1,4 @@
+import { DemoPopup } from "@/components/demo-popup"
 import { DownloadManager } from "@/components/download-manager"
 import { EnhancedHeader } from "@/components/enhanced-header"
 import { FloatingActionMenu } from "@/components/floating-action-menu"
@@ -5,6 +6,7 @@ import { FloatingActionMenu } from "@/components/floating-action-menu"
 export default function DownloadsPage() {
   return (
     <div className="min-h-screen bg-background">
+      <DemoPopup />
       <div className="bg-primary text-primary-foreground py-2 px-4 text-center text-sm font-medium">
         Powered by <strong>EMOTION CAPSULES</strong> • XRPL-only Payments via XUMM
       </div>

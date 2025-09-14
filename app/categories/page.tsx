@@ -1,3 +1,4 @@
+import { DemoPopup } from "@/components/demo-popup"
 import { CategoryNavigation } from "@/components/category-navigation"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -9,6 +10,7 @@ import { FloatingActionMenu } from "@/components/floating-action-menu"
 export default function CategoriesPage() {
   return (
     <div className="min-h-screen bg-background">
+      <DemoPopup />
       <div className="bg-brand-primary text-white py-2 px-4 text-center text-sm font-medium">
         Powered by <strong>EMOTION CAPSULES</strong> • XRPL-only Payments via XUMM
       </div>
@@ -23,8 +25,8 @@ export default function CategoriesPage() {
               <Palette className="h-12 w-12 text-brand-primary" />
             </div>
           </div>
-          <h1 className="text-4xl md:text-6xl font-serif font-bold text-foreground mb-6">Explore Art Categories</h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+          <h1 className="text-4xl md:text-6xl font-serif font-bold text-gray-800 dark:text-gray-100 mb-6">Explore Art Categories</h1>
+          <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
             Discover thousands of artworks across Digital, Physical, and Handmade categories. Each with detailed
             subcategories to help you find exactly what you're looking for.
           </p>
@@ -33,19 +35,19 @@ export default function CategoriesPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto mb-8">
             <div className="text-center">
               <div className="text-3xl font-bold text-brand-primary font-serif">3</div>
-              <div className="text-sm text-muted-foreground">Main Categories</div>
+              <div className="text-sm text-gray-600 dark:text-gray-400">Main Categories</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-brand-accent font-serif">24</div>
-              <div className="text-sm text-muted-foreground">Subcategories</div>
+              <div className="text-sm text-gray-600 dark:text-gray-400">Subcategories</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-brand-secondary font-serif">10K+</div>
-              <div className="text-sm text-muted-foreground">Total Artworks</div>
+              <div className="text-sm text-gray-600 dark:text-gray-400">Total Artworks</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-brand-primary font-serif">500+</div>
-              <div className="text-sm text-muted-foreground">Artists</div>
+              <div className="text-sm text-gray-600 dark:text-gray-400">Artists</div>
             </div>
           </div>
 

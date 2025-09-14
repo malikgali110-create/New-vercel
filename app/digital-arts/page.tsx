@@ -1,102 +1,34 @@
 "use client"
 
 import { useState } from "react"
+import { DemoPopup } from "@/components/demo-popup"
 import { ProductGrid } from "@/components/product-grid"
 import { ProductFilters } from "@/components/product-filters"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Sparkles, ArrowLeft } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card"
+import { Sparkles, ArrowLeft, Download, Palette, Star } from "lucide-react"
 import Link from "next/link"
+import { useHolder } from "@/contexts/holder-context"
 
-// Mock data for digital arts
-const digitalArts = [
-  {
-    id: "nft-001",
-    title: "Cosmic Dreams Collection #1",
-    artist: "CryptoArtist",
-    price: 0.5,
-    currency: "XRP",
-    image: "/cosmic-digital-art-nft.jpg",
-    category: "Digital",
-    tags: ["NFT", "Space", "Abstract", "Rare"],
-    rating: 4.8,
-    isNFT: true,
-    isFeatured: true,
-  },
-  {
-    id: "nft-002",
-    title: "Digital Landscape Series",
-    artist: "PixelMaster",
-    price: 0.3,
-    currency: "XRP",
-    image: "/digital-landscape.png",
-    category: "Digital",
-    tags: ["NFT", "Landscape", "Nature", "Digital"],
-    rating: 4.6,
-    isNFT: true,
-  },
-  {
-    id: "print-001",
-    title: "Printable Abstract Art",
-    artist: "ModernCreator",
-    price: 25,
-    currency: "USD",
-    image: "/abstract-printable-art.jpg",
-    category: "Digital",
-    tags: ["Printable", "Abstract", "Modern", "Colorful"],
-    rating: 4.5,
-  },
-  {
-    id: "nft-003",
-    title: "Emotion Capsule #42",
-    artist: "EmotionArtist",
-    price: 1.2,
-    currency: "XRP",
-    image: "/emotion-capsule-digital-art.jpg",
-    category: "Digital",
-    tags: ["NFT", "Emotion", "Exclusive", "Limited"],
-    rating: 4.9,
-    isNFT: true,
-    isFeatured: true,
-  },
-  {
-    id: "print-002",
-    title: "Geometric Patterns Pack",
-    artist: "GeometryGuru",
-    price: 15,
-    currency: "USD",
-    image: "/geometric-patterns-digital.jpg",
-    category: "Digital",
-    tags: ["Printable", "Geometric", "Patterns", "Minimalist"],
-    rating: 4.4,
-  },
-  {
-    id: "nft-004",
-    title: "Cyberpunk City #7",
-    artist: "FutureVision",
-    price: 0.8,
-    currency: "XRP",
-    image: "/cyberpunk-city-digital-art.png",
-    category: "Digital",
-    tags: ["NFT", "Cyberpunk", "City", "Futuristic"],
-    rating: 4.7,
-    isNFT: true,
-  },
-]
+// Import demo data
+import demoData from "@/data/demo-products.json"
+
+const digitalArts = demoData.digitalArts
 
 const availableTags = [
-  "NFT",
-  "Printable",
+  "Illustration",
+  "Portrait",
+  "Calligraphy",
   "Abstract",
-  "Space",
-  "Landscape",
   "Nature",
   "Modern",
+  "Vintage",
+  "Minimalist",
+  "Colorful",
+  "Black & White",
   "Geometric",
-  "Cyberpunk",
-  "Emotion",
-  "Limited",
-  "Rare",
+  "Artistic"
 ]
 
 export default function DigitalArtsPage() {
@@ -104,6 +36,7 @@ export default function DigitalArtsPage() {
   const [sortBy, setSortBy] = useState("newest")
   const [priceRange, setPriceRange] = useState("all")
   const [selectedTags, setSelectedTags] = useState<string[]>([])
+  const { isHolder } = useHolder()
 
   const handleTagToggle = (tag: string) => {
     setSelectedTags((prev) => (prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]))
@@ -121,12 +54,12 @@ export default function DigitalArtsPage() {
     .filter((product) => {
       const matchesSearch =
         product.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        product.artist.toLowerCase().includes(searchTerm.toLowerCase())
+        product.creator.toLowerCase().includes(searchTerm.toLowerCase())
       const matchesTags = selectedTags.length === 0 || selectedTags.some((tag) => product.tags.includes(tag))
       const matchesPrice =
         priceRange === "all" ||
         (() => {
-          const price = product.currency === "XRP" ? product.price * 100 : product.price // Convert XRP to USD equivalent
+          const price = product.priceUSD
           switch (priceRange) {
             case "0-50":
               return price <= 50
@@ -146,9 +79,9 @@ export default function DigitalArtsPage() {
     .sort((a, b) => {
       switch (sortBy) {
         case "price-low":
-          return a.price - b.price
+          return a.priceXRP - b.priceXRP
         case "price-high":
-          return b.price - a.price
+          return b.priceXRP - a.priceXRP
         case "rating":
           return b.rating - a.rating
         case "oldest":
@@ -160,6 +93,7 @@ export default function DigitalArtsPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <DemoPopup />
       {/* Header */}
       <header className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -176,7 +110,17 @@ export default function DigitalArtsPage() {
                 <h1 className="text-2xl font-bold text-foreground">Digital Arts</h1>
               </div>
             </div>
-            <Badge className="bg-primary/10 text-primary border-primary/20">{filteredProducts.length} artworks</Badge>
+            <div className="flex items-center gap-2">
+              {isHolder && (
+                <Badge className="bg-gold/10 text-gold border-gold/20">
+                  <Star className="h-3 w-3 mr-1" />
+                  Holder Benefits Active
+                </Badge>
+              )}
+              <Badge className="bg-primary/10 text-primary border-primary/20">
+                {filteredProducts.length} artworks
+              </Badge>
+            </div>
           </div>
         </div>
       </header>
@@ -185,10 +129,40 @@ export default function DigitalArtsPage() {
         {/* Page Header */}
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-foreground mb-4">Digital Art Collection</h1>
-          <p className="text-lg text-muted-foreground max-w-2xl">
-            Discover unique NFT collections with exclusive traits and high-quality printable digital artwork. All
-            digital assets are blockchain-verified and instantly downloadable.
+          <p className="text-lg text-muted-foreground max-w-2xl mb-6">
+            High-quality digital artwork for personal and commercial use. Instant download with multiple license options.
           </p>
+          
+          {/* Key Features */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <Card className="border-primary/20">
+              <CardContent className="p-4 flex items-center gap-3">
+                <Download className="h-8 w-8 text-primary" />
+                <div>
+                  <h3 className="font-semibold">Instant Download</h3>
+                  <p className="text-sm text-muted-foreground">High-res files ready to use</p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="border-primary/20">
+              <CardContent className="p-4 flex items-center gap-3">
+                <Palette className="h-8 w-8 text-primary" />
+                <div>
+                  <h3 className="font-semibold">Multiple Formats</h3>
+                  <p className="text-sm text-muted-foreground">PNG, JPG, SVG, PDF included</p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="border-primary/20">
+              <CardContent className="p-4 flex items-center gap-3">
+                <Star className="h-8 w-8 text-primary" />
+                <div>
+                  <h3 className="font-semibold">Commercial License</h3>
+                  <p className="text-sm text-muted-foreground">Use for business projects</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
 
         {/* Filters */}
@@ -209,10 +183,24 @@ export default function DigitalArtsPage() {
 
         {/* Products Grid */}
         {filteredProducts.length > 0 ? (
-          <ProductGrid products={filteredProducts} columns={4} />
+          <ProductGrid products={filteredProducts.map(product => ({
+            id: product.id,
+            title: product.title,
+            artist: product.creator,
+            price: product.priceXRP,
+            currency: "XRP",
+            image: product.images[0],
+            category: product.category,
+            tags: product.tags,
+            rating: product.rating,
+            isNFT: false,
+            isFeatured: product.badges.includes('BESTSELLER')
+          }))} columns={5} />
         ) : (
           <div className="text-center py-12">
-            <p className="text-muted-foreground text-lg">No artworks found matching your criteria.</p>
+            <Sparkles className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
+            <p className="text-muted-foreground text-lg mb-2">No artworks found matching your criteria.</p>
+            <p className="text-sm text-muted-foreground mb-4">Try adjusting your filters or search terms.</p>
             <Button onClick={handleClearFilters} className="mt-4">
               Clear Filters
             </Button>

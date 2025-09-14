@@ -22,77 +22,77 @@ export function EnhancedHeader() {
   const unreadCount = notifications.filter((n) => n.unread).length
 
   return (
-    <header className="border-b border-border/50 bg-white/95 backdrop-blur-md sticky top-12 z-40 gallery-blur shadow-sm">
+    <header className="border-b border-gradient-to-r from-orange-200/30 via-pink-200/30 to-red-200/30 bg-gradient-to-r from-white/98 via-gray-50/95 to-white/98 backdrop-blur-xl sticky top-12 z-40 shadow-lg shadow-orange-500/5">
       <div className="container mx-auto px-4 py-4">
         {/* Top Row */}
         <div className="flex items-center justify-between mb-4">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3 micro-bounce group">
-            <div className="p-3 bg-gradient-to-br from-primary/15 to-accent/15 rounded-2xl group-hover:shadow-lg transition-all duration-300">
-              <Palette className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />
+          {/* Enhanced Logo */}
+          <Link href="/" className="flex items-center space-x-4 group">
+            <div className="relative p-4 bg-gradient-to-br from-orange-500/20 via-pink-500/20 to-red-500/20 rounded-2xl group-hover:shadow-2xl group-hover:shadow-orange-500/25 transition-all duration-500 group-hover:scale-105">
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-400/10 to-red-400/10 rounded-2xl animate-pulse"></div>
+              <Palette className="h-9 w-9 text-orange-600 group-hover:text-red-600 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500 relative z-10" />
             </div>
-            <div>
-              <h1 className="text-2xl font-bold text-foreground font-serif group-hover:text-primary transition-colors duration-300">EMC Store</h1>
-              <p className="text-xs text-muted-foreground font-medium">store.emotioncapsules.art</p>
+            <div className="space-y-1">
+              <h1 className="text-3xl font-bold bg-gradient-to-r from-orange-600 via-pink-600 to-red-600 bg-clip-text text-transparent font-serif group-hover:from-orange-700 group-hover:to-red-700 transition-all duration-500">
+                EMC Store
+              </h1>
+              <p className="text-xs text-gray-500 font-medium tracking-wide group-hover:text-gray-700 transition-colors duration-300">
+                store.emotioncapsules.art
+              </p>
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          {/* Enhanced Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-6">
             <Link
               href="/digital-arts"
-              className="text-foreground hover:text-primary transition-all duration-300 font-medium flex items-center group"
+              className="relative px-4 py-2 text-gray-700 hover:text-white font-semibold flex items-center group transition-all duration-300 rounded-xl hover:bg-gradient-to-r hover:from-orange-500 hover:to-red-500 hover:shadow-lg hover:shadow-orange-500/25"
             >
-              <span className="relative">
+              <span className="relative z-10">
                 Digital Arts
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </span>
-              <Badge variant="secondary" className="ml-2 text-xs animate-pulse">
+              <Badge className="ml-2 text-xs bg-orange-100 text-orange-700 group-hover:bg-white/20 group-hover:text-white transition-all duration-300">
                 2.8K
               </Badge>
             </Link>
             <Link
               href="/physical-arts"
-              className="text-foreground hover:text-accent transition-all duration-300 font-medium flex items-center group"
+              className="relative px-4 py-2 text-gray-700 hover:text-white font-semibold flex items-center group transition-all duration-300 rounded-xl hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-500 hover:shadow-lg hover:shadow-pink-500/25"
             >
-              <span className="relative">
+              <span className="relative z-10">
                 Physical Arts
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
               </span>
-              <Badge variant="secondary" className="ml-2 text-xs animate-pulse">
+              <Badge className="ml-2 text-xs bg-pink-100 text-pink-700 group-hover:bg-white/20 group-hover:text-white transition-all duration-300">
                 1.9K
               </Badge>
             </Link>
             <Link
               href="/handmade-arts"
-              className="text-foreground hover:text-chart-3 transition-all duration-300 font-medium flex items-center group"
+              className="relative px-4 py-2 text-gray-700 hover:text-white font-semibold flex items-center group transition-all duration-300 rounded-xl hover:bg-gradient-to-r hover:from-emerald-500 hover:to-teal-500 hover:shadow-lg hover:shadow-emerald-500/25"
             >
-              <span className="relative">
+              <span className="relative z-10">
                 Handmade Arts
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-chart-3 transition-all duration-300 group-hover:w-full"></span>
               </span>
-              <Badge variant="secondary" className="ml-2 text-xs animate-pulse">
+              <Badge className="ml-2 text-xs bg-emerald-100 text-emerald-700 group-hover:bg-white/20 group-hover:text-white transition-all duration-300">
                 856
               </Badge>
             </Link>
             <Link
               href="/artists"
-              className="text-foreground hover:text-primary transition-all duration-300 font-medium group"
+              className="relative px-4 py-2 text-gray-700 hover:text-white font-semibold group transition-all duration-300 rounded-xl hover:bg-gradient-to-r hover:from-blue-500 hover:to-indigo-500 hover:shadow-lg hover:shadow-blue-500/25"
             >
-              <span className="relative">
+              <span className="relative z-10">
                 Artists
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </span>
             </Link>
             <Link
               href="/collections"
-              className="text-foreground hover:text-primary transition-all duration-300 font-medium group flex items-center"
+              className="relative px-4 py-2 text-gray-700 hover:text-white font-semibold group flex items-center transition-all duration-300 rounded-xl hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:shadow-lg hover:shadow-purple-500/25"
             >
-              <span className="relative">
+              <span className="relative z-10">
                 Collections
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </span>
-              <Sparkles className="h-3 w-3 ml-1 text-chart-3 animate-pulse" />
+              <Sparkles className="h-4 w-4 ml-2 text-purple-500 group-hover:text-white group-hover:animate-spin transition-all duration-300" />
             </Link>
             <Link
               href="/nft-collections"

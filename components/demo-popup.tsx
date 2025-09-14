@@ -28,32 +28,32 @@ export function DemoPopup() {
             </div>
             <DialogTitle className="text-xl font-bold">Demo Website</DialogTitle>
           </div>
-          <DialogDescription className="text-left space-y-3">
+          <div className="text-left space-y-3">
             <div className="flex items-start gap-2">
               <AlertCircle className="h-4 w-4 text-amber-500 mt-0.5 flex-shrink-0" />
-              <p className="text-sm">
+              <div className="text-sm">
                 This frontend is being showcased as a fully working website that is not yet live.
-              </p>
+              </div>
             </div>
             
             <div className="flex items-start gap-2">
               <Sparkles className="h-4 w-4 text-purple-500 mt-0.5 flex-shrink-0" />
-              <p className="text-sm">
+              <div className="text-sm">
                 Final testing is in progress and will be launched soon before the{" "}
                 <Badge variant="secondary" className="mx-1 bg-purple-100 text-purple-700">
                   @emotioncapsules
                 </Badge>
                 NFT collection launch.
-              </p>
+              </div>
             </div>
 
             <div className="bg-gradient-to-r from-orange-50 to-purple-50 p-3 rounded-lg border">
-              <p className="text-xs text-gray-600">
+              <div className="text-xs text-gray-600">
                 <strong>Note:</strong> All features are currently in frontend showcase mode. 
                 Real transactions and wallet integrations will be available soon!
-              </p>
+              </div>
             </div>
-          </DialogDescription>
+          </div>
         </DialogHeader>
         
         <div className="flex gap-2 mt-4">

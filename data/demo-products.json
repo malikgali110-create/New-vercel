@@ -1,0 +1,614 @@
+{
+  "digitalArts": [
+    {
+      "id": "da-001",
+      "title": "Ethereal Dreamscape",
+      "artist": "Luna Visions",
+      "category": "Digital Art",
+      "subcategory": "Illustration",
+      "description": "A mesmerizing digital landscape that captures the essence of dreams and imagination.",
+      "tags": ["abstract", "colorful", "dreamy", "landscape", "digital painting"],
+      "pricing": {
+        "personal": { "xrp": 15, "usd": 8.50 },
+        "commercial": { "xrp": 45, "usd": 25.50 }
+      },
+      "images": {
+        "thumbnail": "/abstract-preview-1.jpg",
+        "hero": "/abstract-digital-painting.jpg",
+        "gallery": ["/abstract-preview-1.jpg", "/abstract-preview-2.jpg", "/abstract-preview-3.jpg"]
+      },
+      "files": {
+        "formats": ["PNG", "JPG", "PDF"],
+        "resolution": "4000x3000px",
+        "dpi": 300,
+        "size": "15.2 MB"
+      },
+      "badges": ["NEW", "Trending"],
+      "featured": true
+    },
+    {
+      "id": "da-002",
+      "title": "Cosmic Harmony",
+      "artist": "Stellar Arts",
+      "category": "Digital Art",
+      "subcategory": "Illustration",
+      "description": "An otherworldly composition blending cosmic elements with earthly beauty.",
+      "tags": ["space", "cosmic", "abstract", "colorful", "harmony"],
+      "pricing": {
+        "personal": { "xrp": 20, "usd": 11.30 },
+        "commercial": { "xrp": 60, "usd": 34.00 }
+      },
+      "images": {
+        "thumbnail": "/cosmic-digital-art-nft.jpg",
+        "hero": "/cosmic-digital-art-nft.jpg",
+        "gallery": ["/cosmic-digital-art-nft.jpg"]
+      },
+      "files": {
+        "formats": ["PNG", "JPG", "SVG"],
+        "resolution": "5000x5000px",
+        "dpi": 300,
+        "size": "22.8 MB"
+      },
+      "badges": ["Bestseller"]
+    },
+    {
+      "id": "da-003",
+      "title": "Urban Pulse",
+      "artist": "CyberVision",
+      "category": "Digital Art",
+      "subcategory": "Illustration",
+      "description": "A vibrant cyberpunk cityscape that pulses with neon energy and urban life.",
+      "tags": ["cyberpunk", "city", "neon", "urban", "futuristic"],
+      "pricing": {
+        "personal": { "xrp": 18, "usd": 10.20 },
+        "commercial": { "xrp": 54, "usd": 30.60 }
+      },
+      "images": {
+        "thumbnail": "/cyberpunk-city-digital-art.png",
+        "hero": "/cyberpunk-city-digital-art.png",
+        "gallery": ["/cyberpunk-city-digital-art.png"]
+      },
+      "files": {
+        "formats": ["PNG", "JPG"],
+        "resolution": "3840x2160px",
+        "dpi": 300,
+        "size": "18.5 MB"
+      },
+      "badges": ["Limited"]
+    },
+    {
+      "id": "da-004",
+      "title": "Serene Portrait",
+      "artist": "Grace Studios",
+      "category": "Digital Art",
+      "subcategory": "Portrait",
+      "description": "A contemplative digital portrait showcasing emotional depth and artistic mastery.",
+      "tags": ["portrait", "serene", "emotional", "realistic", "human"],
+      "pricing": {
+        "personal": { "xrp": 25, "usd": 14.15 },
+        "commercial": { "xrp": 75, "usd": 42.45 }
+      },
+      "images": {
+        "thumbnail": "/oil-painting-portrait.jpg",
+        "hero": "/oil-painting-portrait.jpg",
+        "gallery": ["/oil-painting-portrait.jpg"]
+      },
+      "files": {
+        "formats": ["PNG", "JPG", "TIFF"],
+        "resolution": "3000x4000px",
+        "dpi": 300,
+        "size": "25.6 MB"
+      },
+      "badges": ["Premium"]
+    },
+    {
+      "id": "da-005",
+      "title": "Mystic Forest",
+      "artist": "Nature Dreams",
+      "category": "Digital Art",
+      "subcategory": "Portrait",
+      "description": "A mysterious forest scene with ethereal lighting and magical atmosphere.",
+      "tags": ["forest", "mystic", "nature", "magical", "atmospheric"],
+      "pricing": {
+        "personal": { "xrp": 22, "usd": 12.45 },
+        "commercial": { "xrp": 66, "usd": 37.35 }
+      },
+      "images": {
+        "thumbnail": "/digital-landscape.png",
+        "hero": "/digital-landscape.png",
+        "gallery": ["/digital-landscape.png"]
+      },
+      "files": {
+        "formats": ["PNG", "JPG"],
+        "resolution": "4500x3000px",
+        "dpi": 300,
+        "size": "19.8 MB"
+      },
+      "badges": ["NEW"]
+    },
+    {
+      "id": "da-006",
+      "title": "Golden Hour",
+      "artist": "Light & Shadow",
+      "category": "Digital Art",
+      "subcategory": "Portrait",
+      "description": "A warm, golden portrait capturing the magic of golden hour lighting.",
+      "tags": ["golden hour", "warm", "portrait", "lighting", "atmospheric"],
+      "pricing": {
+        "personal": { "xrp": 28, "usd": 15.85 },
+        "commercial": { "xrp": 84, "usd": 47.55 }
+      },
+      "images": {
+        "thumbnail": "/placeholder.jpg",
+        "hero": "/placeholder.jpg",
+        "gallery": ["/placeholder.jpg"]
+      },
+      "files": {
+        "formats": ["PNG", "JPG", "RAW"],
+        "resolution": "4000x6000px",
+        "dpi": 300,
+        "size": "32.1 MB"
+      },
+      "badges": ["Premium", "Bestseller"]
+    },
+    {
+      "id": "da-007",
+      "title": "Elegant Script",
+      "artist": "Typography Masters",
+      "category": "Digital Art",
+      "subcategory": "Calligraphy",
+      "description": "Beautiful hand-lettered calligraphy with elegant flourishes and perfect balance.",
+      "tags": ["calligraphy", "typography", "elegant", "script", "lettering"],
+      "pricing": {
+        "personal": { "xrp": 12, "usd": 6.80 },
+        "commercial": { "xrp": 36, "usd": 20.40 }
+      },
+      "images": {
+        "thumbnail": "/calligraphy-art-piece.jpg",
+        "hero": "/calligraphy-art-piece.jpg",
+        "gallery": ["/calligraphy-art-piece.jpg"]
+      },
+      "files": {
+        "formats": ["PNG", "SVG", "AI"],
+        "resolution": "3000x2000px",
+        "dpi": 300,
+        "size": "8.5 MB"
+      },
+      "badges": ["Vector"]
+    },
+    {
+      "id": "da-008",
+      "title": "Modern Minimalism",
+      "artist": "Clean Design Co",
+      "category": "Digital Art",
+      "subcategory": "Calligraphy",
+      "description": "Clean, minimalist typography design perfect for modern applications.",
+      "tags": ["minimalist", "modern", "clean", "typography", "simple"],
+      "pricing": {
+        "personal": { "xrp": 10, "usd": 5.65 },
+        "commercial": { "xrp": 30, "usd": 17.00 }
+      },
+      "images": {
+        "thumbnail": "/geometric-patterns-digital.jpg",
+        "hero": "/geometric-patterns-digital.jpg",
+        "gallery": ["/geometric-patterns-digital.jpg"]
+      },
+      "files": {
+        "formats": ["PNG", "SVG", "PDF"],
+        "resolution": "2000x2000px",
+        "dpi": 300,
+        "size": "5.2 MB"
+      },
+      "badges": ["Trending"]
+    },
+    {
+      "id": "da-009",
+      "title": "Vintage Flourish",
+      "artist": "Heritage Arts",
+      "category": "Digital Art",
+      "subcategory": "Calligraphy",
+      "description": "Classic vintage calligraphy with ornate decorative elements and timeless appeal.",
+      "tags": ["vintage", "ornate", "classic", "decorative", "traditional"],
+      "pricing": {
+        "personal": { "xrp": 16, "usd": 9.05 },
+        "commercial": { "xrp": 48, "usd": 27.20 }
+      },
+      "images": {
+        "thumbnail": "/vintage-art-poster.jpg",
+        "hero": "/vintage-art-poster.jpg",
+        "gallery": ["/vintage-art-poster.jpg"]
+      },
+      "files": {
+        "formats": ["PNG", "JPG", "EPS"],
+        "resolution": "3500x2500px",
+        "dpi": 300,
+        "size": "12.8 MB"
+      },
+      "badges": ["Classic"]
+    }
+  ],
+  "nftBundles": [
+    {
+      "id": "nft-001",
+      "title": "Cyber Apes 10K Collection",
+      "artist": "Digital Collective",
+      "creator": "Digital Collective",
+      "category": "NFT Bundle",
+      "type": "10K PFP Collection",
+      "description": "Complete 10,000 unique cyberpunk ape avatars with 200+ traits, rarity data, and launch-ready metadata.",
+      "tags": ["PFP", "10K", "cyberpunk", "apes", "avatars", "traits"],
+      "priceXRP": 500,
+      "priceUSD": 283.00,
+      "pricing": {
+        "bundle": { "xrp": 500, "usd": 283.00 }
+      },
+      "images": {
+        "thumbnail": "/cyber-preview-1.jpg",
+        "hero": "/cyber-preview-1.jpg",
+        "gallery": ["/cyber-preview-1.jpg", "/cyber-preview-2.jpg", "/cyber-preview-3.jpg", "/cyber-preview-4.jpg", "/cyber-preview-5.jpg", "/cyber-preview-6.jpg"]
+      },
+      "contents": {
+        "totalItems": 10000,
+        "traits": 200,
+        "layers": 15,
+        "formats": ["PNG", "JSON"],
+        "resolution": "1000x1000px",
+        "zipSize": "2.8 GB"
+      },
+      "metadata": {
+        "totalSupply": "10K",
+        "traits": 200
+      },
+      "files": [
+        "10,000 unique PNG avatars",
+        "Complete trait rarity spreadsheet",
+        "OpenSea-compatible metadata JSON",
+        "Layer files for customization",
+        "Launch guide and tutorials",
+        "Marketing assets pack",
+        "Smart contract template"
+      ],
+      "rating": 4.8,
+      "includes": [
+        "10,000 unique PNG avatars (1000x1000px)",
+        "Complete trait rarity spreadsheet",
+        "OpenSea-compatible metadata JSON",
+        "Layer files for customization",
+        "Launch guide and tutorials",
+        "Marketing assets pack",
+        "Smart contract template"
+      ],
+      "marketplaces": ["OpenSea", "Magic Eden", "XRP.cafe"],
+      "badges": ["Complete", "Launch Ready"],
+      "holderPerks": "50% off lifetime",
+      "featured": true
+    },
+    {
+      "id": "nft-002",
+      "title": "Mystic Realms 5K Pack",
+      "artist": "Fantasy Studios",
+      "creator": "Fantasy Studios",
+      "category": "NFT Bundle",
+      "type": "5K Themed Collection",
+      "description": "Enchanting fantasy-themed collection with magical creatures and mystical landscapes.",
+      "tags": ["fantasy", "5K", "mystical", "creatures", "realms"],
+      "priceXRP": 300,
+      "priceUSD": 169.80,
+      "pricing": {
+        "bundle": { "xrp": 300, "usd": 169.80 }
+      },
+      "images": {
+        "thumbnail": "/nft-preview-1.jpg",
+        "hero": "/nft-preview-1.jpg",
+        "gallery": ["/nft-preview-1.jpg", "/nft-preview-2.jpg", "/nft-preview-3.jpg", "/nft-preview-4.jpg"]
+      },
+      "contents": {
+        "totalItems": 5000,
+        "traits": 150,
+        "layers": 12,
+        "formats": ["PNG", "JSON"],
+        "resolution": "1200x1200px",
+        "zipSize": "1.8 GB"
+      },
+      "metadata": {
+        "totalSupply": "5K",
+        "traits": 150
+      },
+      "files": [
+        "5,000 unique fantasy avatars",
+        "Trait distribution analysis",
+        "Metadata for all major platforms",
+        "Bonus animated versions (100 pieces)",
+        "Community building guide",
+        "Discord bot integration"
+      ],
+      "rating": 4.6,
+      "categories": ["Backgrounds", "Bodies", "Clothing", "Accessories", "Eyes", "Mouths", "Hats", "Magic Effects"],
+      "includes": [
+        "5,000 unique fantasy avatars",
+        "Trait distribution analysis",
+        "Metadata for all major platforms",
+        "Bonus animated versions (100 pieces)",
+        "Community building guide",
+        "Discord bot integration"
+      ],
+      "marketplaces": ["OpenSea", "XRP.cafe", "Foundation"],
+      "badges": ["Animated", "Premium"]
+    },
+    {
+      "id": "nft-003",
+      "title": "Utility Token Pack 1K",
+      "artist": "Utility Labs",
+      "creator": "Utility Labs",
+      "category": "NFT Bundle",
+      "type": "1K Utility Collection",
+      "description": "Exclusive utility tokens with real-world benefits, holder perks, and community access.",
+      "tags": ["utility", "1K", "exclusive", "benefits", "community"],
+      "priceXRP": 200,
+      "priceUSD": 113.20,
+      "pricing": {
+        "bundle": { "xrp": 200, "usd": 113.20 }
+      },
+      "images": {
+        "thumbnail": "/nft-preview-5.jpg",
+        "hero": "/nft-preview-5.jpg",
+        "gallery": ["/nft-preview-5.jpg", "/nft-preview-6.jpg", "/nft-preview-7.jpg"]
+      },
+      "contents": {
+        "totalItems": 1000,
+        "traits": 50,
+        "layers": 8,
+        "formats": ["PNG", "JSON", "SVG"],
+        "resolution": "800x800px",
+        "zipSize": "450 MB"
+      },
+      "metadata": {
+        "totalSupply": "1K",
+        "traits": 50
+      },
+      "files": [
+        "1,000 unique utility tokens",
+        "Holder benefits documentation",
+        "Smart contract with utility functions",
+        "Staking mechanism template",
+        "Governance token integration",
+        "Exclusive community access"
+      ],
+      "rating": 4.7,
+      "categories": ["Utility", "Governance", "Staking", "Community", "Benefits"],
+      "includes": [
+        "1,000 unique utility tokens",
+        "Holder benefits documentation",
+        "Smart contract with utility functions",
+        "Staking mechanism template",
+        "Governance token integration",
+        "Exclusive community access"
+      ],
+      "marketplaces": ["XRP.cafe", "OpenSea"],
+      "badges": ["Utility", "Limited"],
+      "utilities": ["Staking rewards", "Governance voting", "Exclusive drops", "Community access"]
+    },
+    {
+      "id": "nft-004",
+      "title": "Traits Mega-Pack",
+      "artist": "Trait Factory",
+      "creator": "Trait Factory",
+      "category": "NFT Bundle",
+      "type": "Trait Library",
+      "description": "Comprehensive library of 200+ professional traits and layers for creating unlimited NFT combinations.",
+      "tags": ["traits", "layers", "library", "customizable", "professional"],
+      "priceXRP": 150,
+      "priceUSD": 84.90,
+      "pricing": {
+        "bundle": { "xrp": 150, "usd": 84.90 }
+      },
+      "images": {
+        "thumbnail": "/nft-preview-8.jpg",
+        "hero": "/nft-preview-8.jpg",
+        "gallery": ["/nft-preview-8.jpg", "/nft-preview-9.jpg", "/nft-preview-10.jpg"]
+      },
+      "contents": {
+        "totalTraits": 200,
+        "totalItems": 200,
+        "traits": 200,
+        "categories": 20,
+        "layers": 200,
+        "formats": ["PNG", "PSD", "AI"],
+        "resolution": "2000x2000px",
+        "zipSize": "1.2 GB"
+      },
+      "metadata": {
+        "totalSupply": "200+ Traits",
+        "traits": 200
+      },
+      "files": [
+        "200+ individual trait layers",
+        "Photoshop and Illustrator files",
+        "Trait combination generator",
+        "Rarity calculation spreadsheet",
+        "Style guide and documentation",
+        "Commercial usage rights"
+      ],
+      "rating": 4.9,
+      "includes": [
+        "200+ individual trait layers",
+        "Photoshop and Illustrator files",
+        "Trait combination generator",
+        "Rarity calculation spreadsheet",
+        "Style guide and documentation",
+        "Commercial usage rights"
+      ],
+      "categories": ["Backgrounds", "Bodies", "Clothing", "Accessories", "Eyes", "Mouths", "Hats", "Special Effects"],
+      "badges": ["Professional", "Commercial Rights"]
+    }
+  ],
+  "printProducts": [
+    {
+      "id": "print-001",
+      "title": "Abstract Harmony Poster",
+      "artist": "Modern Prints Co",
+      "category": "Print Product",
+      "type": "Poster",
+      "description": "Museum-quality print of abstract digital art, perfect for modern interiors.",
+      "tags": ["poster", "abstract", "modern", "wall art", "home decor"],
+      "pricing": {
+        "A3": { "xrp": 35, "usd": 19.80 },
+        "A2": { "xrp": 55, "usd": 31.15 },
+        "custom": { "xrp": 75, "usd": 42.45 }
+      },
+      "images": {
+        "thumbnail": "/abstract-framed-artwork.jpg",
+        "hero": "/abstract-framed-artwork.jpg",
+        "mockups": ["/abstract-framed-artwork.jpg", "/abstract-printable-art.jpg"]
+      },
+      "options": {
+        "sizes": ["A3 (297×420mm)", "A2 (420×594mm)", "Custom Size"],
+        "materials": ["Premium Paper (200gsm)", "Canvas (380gsm)", "Metal Print"],
+        "frames": ["No Frame", "Black Frame", "White Frame", "Natural Wood"]
+      },
+      "shipping": {
+        "time": "7-14 business days",
+        "cost": "Free over 100 XRP",
+        "regions": "Worldwide"
+      },
+      "badges": ["Premium Quality", "Museum Grade"]
+    },
+    {
+      "id": "print-002",
+      "title": "City Skyline Canvas",
+      "artist": "Urban Arts",
+      "category": "Print Product",
+      "type": "Canvas",
+      "description": "Stunning cityscape printed on premium canvas with gallery-wrap finish.",
+      "tags": ["canvas", "cityscape", "urban", "gallery wrap", "large format"],
+      "pricing": {
+        "medium": { "xrp": 85, "usd": 48.15 },
+        "large": { "xrp": 125, "usd": 70.75 },
+        "xlarge": { "xrp": 175, "usd": 99.05 }
+      },
+      "images": {
+        "thumbnail": "/city-skyline-canvas-art.jpg",
+        "hero": "/city-skyline-canvas-art.jpg",
+        "mockups": ["/city-skyline-canvas-art.jpg"]
+      },
+      "options": {
+        "sizes": ["Medium (40×60cm)", "Large (60×90cm)", "X-Large (80×120cm)"],
+        "materials": ["Premium Canvas (380gsm)", "Fine Art Canvas (450gsm)"],
+        "finish": ["Gallery Wrap", "Traditional Frame"]
+      },
+      "badges": ["Gallery Quality", "Ready to Hang"]
+    },
+    {
+      "id": "print-003",
+      "title": "Artistic Design Hoodie",
+      "artist": "Wearable Art Co",
+      "category": "Print Product",
+      "type": "Apparel",
+      "description": "Comfortable premium hoodie featuring exclusive digital art design.",
+      "tags": ["hoodie", "apparel", "wearable art", "comfortable", "exclusive"],
+      "pricing": {
+        "S-M": { "xrp": 65, "usd": 36.80 },
+        "L-XL": { "xrp": 70, "usd": 39.65 },
+        "XXL": { "xrp": 75, "usd": 42.45 }
+      },
+      "images": {
+        "thumbnail": "/custom-hand-painted-shirt.jpg",
+        "hero": "/custom-hand-painted-shirt.jpg",
+        "mockups": ["/custom-hand-painted-shirt.jpg"]
+      },
+      "options": {
+        "sizes": ["S", "M", "L", "XL", "XXL"],
+        "colors": ["Black", "White", "Navy", "Heather Gray"],
+        "materials": ["100% Cotton", "Cotton Blend (80/20)"]
+      },
+      "badges": ["Sustainable", "Premium Cotton"]
+    },
+    {
+      "id": "print-004",
+      "title": "Designer Art Mug",
+      "artist": "Daily Essentials",
+      "category": "Print Product",
+      "type": "Mug",
+      "description": "High-quality ceramic mug with vibrant art print, perfect for daily use.",
+      "tags": ["mug", "ceramic", "daily use", "vibrant", "dishwasher safe"],
+      "pricing": {
+        "standard": { "xrp": 25, "usd": 14.15 },
+        "large": { "xrp": 30, "usd": 17.00 }
+      },
+      "images": {
+        "thumbnail": "/artistic-coffee-mug.jpg",
+        "hero": "/artistic-coffee-mug.jpg",
+        "mockups": ["/artistic-coffee-mug.jpg"]
+      },
+      "options": {
+        "sizes": ["Standard (11oz)", "Large (15oz)"],
+        "materials": ["Ceramic", "Stainless Steel"],
+        "finish": ["Glossy", "Matte"]
+      },
+      "badges": ["Dishwasher Safe", "Microwave Safe"]
+    },
+    {
+      "id": "print-005",
+      "title": "Custom Phone Case",
+      "artist": "Tech Accessories",
+      "category": "Print Product",
+      "type": "Phone Case",
+      "description": "Protective phone case with custom art print, available for all major phone models.",
+      "tags": ["phone case", "protective", "custom", "tech accessory", "durable"],
+      "pricing": {
+        "standard": { "xrp": 40, "usd": 22.65 },
+        "premium": { "xrp": 55, "usd": 31.15 }
+      },
+      "images": {
+        "thumbnail": "/placeholder.jpg",
+        "hero": "/placeholder.jpg",
+        "mockups": ["/placeholder.jpg"]
+      },
+      "options": {
+        "models": ["iPhone 15", "iPhone 14", "Samsung Galaxy S24", "Google Pixel 8"],
+        "materials": ["Silicone", "Hard Plastic", "Leather"],
+        "protection": ["Standard", "Heavy Duty"]
+      },
+      "badges": ["Drop Protection", "Wireless Charging Compatible"]
+    },
+    {
+      "id": "print-006",
+      "title": "Metal Art Print",
+      "artist": "Luxury Prints",
+      "category": "Print Product",
+      "type": "Metal Print",
+      "description": "Ultra-modern metal print with vibrant colors and sleek finish, perfect for contemporary spaces.",
+      "tags": ["metal print", "modern", "vibrant", "contemporary", "luxury"],
+      "pricing": {
+        "small": { "xrp": 95, "usd": 53.80 },
+        "medium": { "xrp": 145, "usd": 82.05 },
+        "large": { "xrp": 195, "usd": 110.35 }
+      },
+      "images": {
+        "thumbnail": "/placeholder.jpg",
+        "hero": "/placeholder.jpg",
+        "mockups": ["/placeholder.jpg"]
+      },
+      "options": {
+        "sizes": ["Small (20×30cm)", "Medium (40×60cm)", "Large (60×90cm)"],
+        "finish": ["Glossy", "Matte", "Brushed"],
+        "mounting": ["Float Mount", "Standoff Mount"]
+      },
+      "badges": ["Luxury", "Fade Resistant", "Ready to Hang"]
+    }
+  ],
+  "metadata": {
+    "totalProducts": 22,
+    "categories": {
+      "digitalArts": 12,
+      "nftBundles": 4,
+      "printProducts": 6
+    },
+    "priceRange": {
+      "min": { "xrp": 10, "usd": 5.65 },
+      "max": { "xrp": 500, "usd": 283.00 }
+    },
+    "lastUpdated": "2024-03-01T00:00:00Z",
+    "version": "1.0.0"
+  }
+}

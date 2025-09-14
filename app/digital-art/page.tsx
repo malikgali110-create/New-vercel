@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { DemoPopup } from "@/components/demo-popup"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -470,6 +471,7 @@ export default function DigitalArtPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <DemoPopup />
       {/* Header */}
       <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-12">
         <div className="container mx-auto px-4">
@@ -556,7 +558,7 @@ export default function DigitalArtPage() {
         </div>
 
         {/* Artworks Grid */}
-        <div className={viewMode === "grid" ? "grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-3" : "space-y-4"}>
+        <div className={viewMode === "grid" ? "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3" : "space-y-4"}>
           {/* Products Grid - 7x7 = 49 products */}
           {filteredArtworks.map((art) => (
             <Card key={art.id} className="overflow-hidden hover:shadow-lg transition-shadow group brand-card">

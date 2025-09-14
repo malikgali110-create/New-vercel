@@ -147,7 +147,7 @@ export function CategoryNavigation() {
               </div>
             </div>
             <CardContent className="p-6">
-              <p className="text-muted-foreground mb-4 leading-relaxed">{category.description}</p>
+              <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">{category.description}</p>
               <Button variant="ghost" className="w-full justify-between" onClick={() => toggleCategory(category.slug)}>
                 <span>Explore Subcategories</span>
                 {expandedCategory === category.slug ? (
@@ -174,8 +174,8 @@ export function CategoryNavigation() {
                         <category.icon className={`h-8 w-8 text-${category.color}`} />
                       </div>
                       <div>
-                        <h3 className="text-2xl font-serif font-bold text-foreground">{category.name}</h3>
-                        <p className="text-muted-foreground">{category.description}</p>
+                        <h3 className="text-2xl font-serif font-bold text-gray-800 dark:text-gray-100">{category.name}</h3>
+                        <p className="text-gray-700 dark:text-gray-300">{category.description}</p>
                       </div>
                     </div>
                     <Link href={`/${category.slug}`}>
@@ -212,7 +212,7 @@ export function CategoryNavigation() {
                           <subcategory.icon className="h-5 w-5 flex-shrink-0" />
                           <div className="text-left flex-1">
                             <div className="font-medium text-sm">{subcategory.name}</div>
-                            <div className="text-xs text-muted-foreground">{subcategory.count} items</div>
+                            <div className="text-xs text-gray-600 dark:text-gray-400">{subcategory.count} items</div>
                           </div>
                         </div>
                       </Button>
@@ -223,22 +223,22 @@ export function CategoryNavigation() {
                   <div className="mt-8 p-4 bg-muted/30 rounded-xl">
                     <div className="grid grid-cols-3 gap-4 text-center">
                       <div>
-                        <div className="text-2xl font-bold text-foreground">
+                        <div className="text-2xl font-bold text-gray-800 dark:text-gray-100">
                           {category.subcategories.reduce((sum, sub) => sum + sub.count, 0)}
                         </div>
-                        <div className="text-sm text-muted-foreground">Total Items</div>
+                        <div className="text-sm text-gray-600 dark:text-gray-400">Total Items</div>
                       </div>
                       <div>
-                        <div className="text-2xl font-bold text-foreground">
+                        <div className="text-2xl font-bold text-gray-800 dark:text-gray-100">
                           {category.subcategories.filter((sub) => sub.trending).length}
                         </div>
-                        <div className="text-sm text-muted-foreground">Trending</div>
+                        <div className="text-sm text-gray-600 dark:text-gray-400">Trending</div>
                       </div>
                       <div>
-                        <div className="text-2xl font-bold text-foreground">
+                        <div className="text-2xl font-bold text-gray-800 dark:text-gray-100">
                           {category.subcategories.filter((sub) => sub.featured).length}
                         </div>
-                        <div className="text-sm text-muted-foreground">Featured</div>
+                        <div className="text-sm text-gray-600 dark:text-gray-400">Featured</div>
                       </div>
                     </div>
                   </div>

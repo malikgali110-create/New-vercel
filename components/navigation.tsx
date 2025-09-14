@@ -113,9 +113,9 @@ export function Navigation() {
                             <div className="w-4 h-4 bg-orange-500 rounded-full flex items-center justify-center">
                               <Palette className="h-3 w-3 text-white" />
                             </div>
-                            <div className="text-sm font-medium leading-none text-orange-600">🎨 Digital Art</div>
+                            <div className="text-sm font-medium leading-none text-orange-700 dark:text-orange-400">🎨 Digital Art</div>
                           </div>
-                          <p className="line-clamp-2 text-sm leading-snug text-gray-600">
+                          <p className="line-clamp-2 text-sm leading-snug text-gray-700 dark:text-gray-300">
                             High-quality digital artworks and NFTs
                           </p>
                         </Link>
@@ -129,9 +129,9 @@ export function Navigation() {
                             <div className="w-4 h-4 bg-green-500 rounded-full flex items-center justify-center">
                               <Brush className="h-3 w-3 text-white" />
                             </div>
-                            <div className="text-sm font-medium leading-none text-green-600">🖼️ Print Products</div>
+                            <div className="text-sm font-medium leading-none text-green-700 dark:text-green-400">🖼️ Print Products</div>
                           </div>
-                          <p className="line-clamp-2 text-sm leading-snug text-gray-600">
+                          <p className="line-clamp-2 text-sm leading-snug text-gray-700 dark:text-gray-300">
                             Custom prints, apparel, and merchandise
                           </p>
                         </Link>
@@ -145,27 +145,156 @@ export function Navigation() {
                             <div className="w-4 h-4 bg-sky-500 rounded-full flex items-center justify-center">
                               <Sparkles className="h-3 w-3 text-white" />
                             </div>
-                            <div className="text-sm font-medium leading-none text-sky-600">✋ Handmade Art</div>
+                            <div className="text-sm font-medium leading-none text-sky-700 dark:text-sky-400">✋ Handmade Art</div>
                           </div>
-                          <p className="line-clamp-2 text-sm leading-snug text-gray-600">
+                          <p className="line-clamp-2 text-sm leading-snug text-gray-700 dark:text-gray-300">
                             Unique handcrafted pieces from artisans
                           </p>
                         </Link>
                       </NavigationMenuLink>
                       <NavigationMenuLink asChild>
                         <Link
-                          href="/categories/nft-art"
+                          href="/nft-art"
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-purple-50 hover:text-purple-600 focus:bg-purple-50 focus:text-purple-600"
                         >
                           <div className="flex items-center gap-2">
                             <div className="w-4 h-4 bg-purple-500 rounded-full flex items-center justify-center">
-                              <Zap className="h-3 w-3 text-white" />
+                              <Sparkles className="h-3 w-3 text-white" />
                             </div>
-                            <div className="text-sm font-medium leading-none text-purple-600">💎 NFT Art</div>
+                            <div className="text-sm font-medium leading-none text-purple-700 dark:text-purple-400">🎨 NFT Art</div>
                             <span className="text-xs bg-yellow-400 text-black px-2 py-1 rounded-full font-bold ml-2">Exclusive</span>
                           </div>
-                          <p className="line-clamp-2 text-sm leading-snug text-gray-600">
+                          <p className="line-clamp-2 text-sm leading-snug text-gray-700 dark:text-gray-300">
                             Digital collectibles and blockchain art
+                          </p>
+                        </Link>
+                      </NavigationMenuLink>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          href="/nft-bundles"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-gradient-to-r hover:from-yellow-50 hover:to-orange-50 hover:text-orange-600 focus:bg-orange-50 focus:text-orange-600"
+                        >
+                          <div className="flex items-center gap-2">
+                            <div className="w-4 h-4 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full flex items-center justify-center">
+                              <Sparkles className="h-3 w-3 text-white" />
+                            </div>
+                            <div className="text-sm font-medium leading-none text-orange-700 dark:text-orange-400">💎 NFT Bundles</div>
+                            <span className="text-xs bg-yellow-400 text-black px-2 py-1 rounded-full font-bold ml-2">Premium</span>
+                          </div>
+                          <p className="line-clamp-2 text-sm leading-snug text-gray-700 dark:text-gray-300">
+                            Curated NFT collections with exclusive benefits
+                          </p>
+                        </Link>
+                      </NavigationMenuLink>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          href="/categories/characters"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-pink-50 hover:text-pink-600 focus:bg-pink-50 focus:text-pink-600"
+                        >
+                          <div className="flex items-center gap-2">
+                            <div className="w-4 h-4 bg-pink-500 rounded-full flex items-center justify-center">
+                              <Sparkles className="h-3 w-3 text-white" />
+                            </div>
+                            <div className="text-sm font-medium leading-none text-pink-700 dark:text-pink-400">🎭 Characters</div>
+                          </div>
+                          <p className="line-clamp-2 text-sm leading-snug text-gray-700 dark:text-gray-300">
+                            Animated and illustrated character designs
+                          </p>
+                        </Link>
+                      </NavigationMenuLink>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          href="/categories/abstract"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-indigo-50 hover:text-indigo-600 focus:bg-indigo-50 focus:text-indigo-600"
+                        >
+                          <div className="flex items-center gap-2">
+                            <div className="w-4 h-4 bg-indigo-500 rounded-full flex items-center justify-center">
+                              <Sparkles className="h-3 w-3 text-white" />
+                            </div>
+                            <div className="text-sm font-medium leading-none text-indigo-700 dark:text-indigo-400">🌟 Abstract</div>
+                          </div>
+                          <p className="line-clamp-2 text-sm leading-snug text-gray-700 dark:text-gray-300">
+                            Modern abstract and conceptual artwork
+                          </p>
+                        </Link>
+                      </NavigationMenuLink>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          href="/categories/landscape"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-teal-50 hover:text-teal-600 focus:bg-teal-50 focus:text-teal-600"
+                        >
+                          <div className="flex items-center gap-2">
+                            <div className="w-4 h-4 bg-teal-500 rounded-full flex items-center justify-center">
+                              <Sparkles className="h-3 w-3 text-white" />
+                            </div>
+                            <div className="text-sm font-medium leading-none text-teal-700 dark:text-teal-400">🏞️ Landscape</div>
+                          </div>
+                          <p className="line-clamp-2 text-sm leading-snug text-gray-700 dark:text-gray-300">
+                            Beautiful nature and scenic landscapes
+                          </p>
+                        </Link>
+                      </NavigationMenuLink>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          href="/categories/portrait"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-amber-50 hover:text-amber-600 focus:bg-amber-50 focus:text-amber-600"
+                        >
+                          <div className="flex items-center gap-2">
+                            <div className="w-4 h-4 bg-amber-500 rounded-full flex items-center justify-center">
+                              <Sparkles className="h-3 w-3 text-white" />
+                            </div>
+                            <div className="text-sm font-medium leading-none text-amber-600">👤 Portrait</div>
+                          </div>
+                          <p className="line-clamp-2 text-sm leading-snug text-gray-600">
+                            Professional and artistic portrait photography
+                          </p>
+                        </Link>
+                      </NavigationMenuLink>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          href="/categories/pop-art"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-red-50 hover:text-red-600 focus:bg-red-50 focus:text-red-600"
+                        >
+                          <div className="flex items-center gap-2">
+                            <div className="w-4 h-4 bg-red-500 rounded-full flex items-center justify-center">
+                              <Sparkles className="h-3 w-3 text-white" />
+                            </div>
+                            <div className="text-sm font-medium leading-none text-red-600">🎪 Pop Art</div>
+                          </div>
+                          <p className="line-clamp-2 text-sm leading-snug text-gray-600">
+                            Vibrant pop art and contemporary designs
+                          </p>
+                        </Link>
+                      </NavigationMenuLink>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          href="/categories/fantasy"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-violet-50 hover:text-violet-600 focus:bg-violet-50 focus:text-violet-600"
+                        >
+                          <div className="flex items-center gap-2">
+                            <div className="w-4 h-4 bg-violet-500 rounded-full flex items-center justify-center">
+                              <Sparkles className="h-3 w-3 text-white" />
+                            </div>
+                            <div className="text-sm font-medium leading-none text-violet-600">🔮 Fantasy</div>
+                          </div>
+                          <p className="line-clamp-2 text-sm leading-snug text-gray-600">
+                            Magical and fantasy-themed artwork
+                          </p>
+                        </Link>
+                      </NavigationMenuLink>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          href="/categories/sci-fi"
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-cyan-50 hover:text-cyan-600 focus:bg-cyan-50 focus:text-cyan-600"
+                        >
+                          <div className="flex items-center gap-2">
+                            <div className="w-4 h-4 bg-cyan-500 rounded-full flex items-center justify-center">
+                              <Sparkles className="h-3 w-3 text-white" />
+                            </div>
+                            <div className="text-sm font-medium leading-none text-cyan-600">🤖 Sci-Fi</div>
+                          </div>
+                          <p className="line-clamp-2 text-sm leading-snug text-gray-600">
+                            Futuristic and science fiction artwork
                           </p>
                         </Link>
                       </NavigationMenuLink>
@@ -196,8 +325,18 @@ export function Navigation() {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/categories/nft-art" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
+                  <Link href="/nft-art" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
                     NFT Art
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link href="/nft-bundles" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-blue-600 text-white px-4 py-2 text-sm font-medium transition-all duration-300 hover:from-purple-700 hover:to-blue-700 hover:shadow-lg focus:outline-none disabled:pointer-events-none disabled:opacity-50 relative overflow-hidden">
+                    <span className="relative z-10 flex items-center gap-1">
+                      💎 NFT Bundles
+                    </span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>

@@ -1,6 +1,6 @@
 'use client';
 
-import { Heart, Star, ShoppingCart, Filter, Grid, List, Search, SlidersHorizontal, Truck, Award } from 'lucide-react';
+import { Heart, Star, ShoppingCart, Filter, Grid, List, Search, SlidersHorizontal, Truck, Award, Eye, Package, Download, Palette, Shield, FileImage, Zap, ExternalLink } from 'lucide-react';
 import { useState } from 'react';
 
 export default function PrintProductsPage() {
@@ -716,88 +716,155 @@ export default function PrintProductsPage() {
 
       {/* Products Grid - 7 Columns */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
           {printItems.map((item) => (
             <div
               key={item.id}
-              className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105"
-              style={{ backgroundColor: 'var(--brand-bg-card)' }}
+              className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-gray-800 dark:via-gray-850 dark:to-gray-900 border border-gray-200/50 dark:border-gray-700/50"
             >
-              {/* Featured Badge */}
-              {item.featured && (
-                <div className="absolute top-3 left-3 z-10">
-                  <span className="px-2 py-1 text-xs font-bold text-white rounded-full" style={{ backgroundColor: 'var(--brand-accent)' }}>
-                    Featured
+              {/* Enhanced Badge System */}
+              <div className="absolute top-3 left-3 z-20 flex flex-col gap-2">
+                {item.featured && (
+                  <span className="px-3 py-1 text-xs font-bold text-white rounded-full bg-gradient-to-r from-orange-500 to-red-500 shadow-lg animate-pulse">
+                    ⭐ Featured
                   </span>
-                </div>
-              )}
-              
-              {/* Delivery Badge */}
-              <div className="absolute top-3 right-3 z-10">
-                <span className="px-2 py-1 text-xs font-medium text-white rounded-full" style={{ backgroundColor: 'var(--brand-success)' }}>
-                  {item.delivery}
+                )}
+                <span className="px-3 py-1 text-xs font-medium text-white rounded-full bg-gradient-to-r from-green-500 to-emerald-500 shadow-lg">
+                  🚚 {item.delivery}
                 </span>
               </div>
               
-              {/* Image Container */}
-              <div className="relative aspect-square overflow-hidden" style={{ background: 'var(--brand-gradient-warm)' }}>
-                <div className="absolute inset-0 bg-gradient-to-br from-orange-400/20 via-pink-500/20 to-red-400/20"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-lg" style={{ background: 'var(--brand-gradient-secondary)' }}></div>
-                </div>
-                
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="flex gap-3">
-                    <button className="p-3 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors">
-                      <Heart className="w-5 h-5 text-white" />
-                    </button>
-                    <button className="p-3 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors">
-                      <ShoppingCart className="w-5 h-5 text-white" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Content */}
-              <div className="p-4">
-                <div className="mb-2">
-                  <h3 className="font-semibold text-sm mb-1 line-clamp-2" style={{ color: 'var(--brand-text-primary)' }}>
-                    {item.title}
-                  </h3>
-                  <p className="text-xs" style={{ color: 'var(--brand-text-tertiary)' }}>
-                    by {item.artist}
-                  </p>
-                </div>
-                
-                <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-1">
-                    <Star className="w-3 h-3 fill-yellow-400 text-yellow-400" />
-                    <span className="text-xs font-medium">{item.rating}</span>
-                    <span className="text-xs" style={{ color: 'var(--brand-text-tertiary)' }}>({item.reviews})</span>
-                  </div>
-                  <span className="text-xs px-2 py-1 rounded-full" style={{ 
-                    backgroundColor: 'var(--brand-accent-50)', 
-                    color: 'var(--brand-accent)' 
-                  }}>
-                    {item.category}
-                  </span>
-                </div>
-                
-                <div className="flex items-center justify-between mb-2">
-                  <span className="font-bold text-lg" style={{ color: 'var(--brand-accent)' }}>
-                    {item.price}
-                  </span>
-                  <div className="flex items-center gap-1 text-xs" style={{ color: 'var(--brand-success)' }}>
-                    <Truck className="w-3 h-3" />
-                    <span>{item.delivery}</span>
-                  </div>
-                </div>
-                
-                <button className="w-full py-2 text-xs font-medium text-white rounded-lg transition-all duration-300 hover:scale-105" style={{ backgroundColor: 'var(--brand-accent)' }}>
-                  Add to Cart
+              {/* Quick Actions */}
+              <div className="absolute top-3 right-3 z-20 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <button className="p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white shadow-lg hover:scale-110 transition-all">
+                  <Heart className="w-4 h-4 text-gray-700 hover:text-red-500" />
+                </button>
+                <button className="p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white shadow-lg hover:scale-110 transition-all">
+                  <Eye className="w-4 h-4 text-gray-700 hover:text-blue-500" />
                 </button>
               </div>
+              
+              {/* Enhanced Image Container */}
+               <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-orange-100 via-pink-50 to-red-100 dark:from-orange-900/20 dark:via-pink-900/20 dark:to-red-900/20">
+                 <div className="absolute inset-0 bg-gradient-to-br from-orange-400/10 via-pink-500/10 to-red-400/10"></div>
+                 <div className="absolute inset-0 flex items-center justify-center">
+                   <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-orange-500 to-red-500 shadow-lg flex items-center justify-center">
+                     <span className="text-white text-2xl font-bold">{item.title.charAt(0)}</span>
+                   </div>
+                 </div>
+                 
+                 {/* Enhanced Hover Overlay with Details */}
+                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-4">
+                   <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                     <div className="bg-white/95 backdrop-blur-sm rounded-lg p-3 mb-3 shadow-lg">
+                       <h4 className="font-semibold text-sm text-gray-800 mb-1">Quick Info</h4>
+                       <div className="grid grid-cols-2 gap-2 text-xs text-gray-600">
+                         <div className="flex items-center gap-1">
+                           <Package className="w-3 h-3" />
+                           <span>Print Ready</span>
+                         </div>
+                         <div className="flex items-center gap-1">
+                           <Download className="w-3 h-3" />
+                           <span>Instant</span>
+                         </div>
+                         <div className="flex items-center gap-1">
+                           <Palette className="w-3 h-3" />
+                           <span>High Quality</span>
+                         </div>
+                         <div className="flex items-center gap-1">
+                           <Shield className="w-3 h-3" />
+                           <span>Licensed</span>
+                         </div>
+                       </div>
+                     </div>
+                     <div className="flex gap-2">
+                       <button className="flex-1 py-2 px-3 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-lg text-xs font-medium hover:from-orange-600 hover:to-red-600 transition-all flex items-center justify-center gap-1">
+                         <ShoppingCart className="w-3 h-3" />
+                         Add to Cart
+                       </button>
+                       <button className="p-2 bg-white/90 rounded-lg hover:bg-white transition-colors">
+                         <ExternalLink className="w-3 h-3 text-gray-700" />
+                       </button>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+              
+              {/* Enhanced Content Section */}
+               <div className="p-5 space-y-4">
+                 {/* Title and Artist */}
+                 <div className="space-y-1">
+                   <h3 className="font-bold text-base text-gray-800 dark:text-white line-clamp-2 leading-tight">
+                     {item.title}
+                   </h3>
+                   <div className="flex items-center gap-2">
+                     <div className="w-6 h-6 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center">
+                       <span className="text-white text-xs font-bold">{item.artist.charAt(0)}</span>
+                     </div>
+                     <p className="text-sm text-gray-600 dark:text-gray-300 font-medium">
+                       {item.artist}
+                     </p>
+                   </div>
+                 </div>
+                 
+                 {/* Enhanced Rating and Category */}
+                 <div className="flex items-center justify-between">
+                   <div className="flex items-center gap-1 bg-yellow-50 dark:bg-yellow-900/20 px-2 py-1 rounded-full">
+                     <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                     <span className="text-sm font-bold text-yellow-700 dark:text-yellow-300">{item.rating}</span>
+                     <span className="text-xs text-yellow-600 dark:text-yellow-400">({item.reviews})</span>
+                   </div>
+                   <span className="text-xs px-3 py-1 rounded-full bg-gradient-to-r from-orange-100 to-red-100 dark:from-orange-900/30 dark:to-red-900/30 text-orange-700 dark:text-orange-300 font-medium border border-orange-200 dark:border-orange-700">
+                     {item.category}
+                   </span>
+                 </div>
+                 
+                 {/* Product Details Box */}
+                 <div className="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-3 space-y-2">
+                   <h4 className="text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide">Product Details</h4>
+                   <div className="grid grid-cols-2 gap-2 text-xs">
+                     <div className="flex items-center gap-1 text-gray-600 dark:text-gray-400">
+                       <FileImage className="w-3 h-3" />
+                       <span>High Resolution</span>
+                     </div>
+                     <div className="flex items-center gap-1 text-gray-600 dark:text-gray-400">
+                       <Zap className="w-3 h-3" />
+                       <span>Instant Download</span>
+                     </div>
+                     <div className="flex items-center gap-1 text-gray-600 dark:text-gray-400">
+                       <Palette className="w-3 h-3" />
+                       <span>Print Ready</span>
+                     </div>
+                     <div className="flex items-center gap-1 text-gray-600 dark:text-gray-400">
+                       <Shield className="w-3 h-3" />
+                       <span>Commercial Use</span>
+                     </div>
+                   </div>
+                 </div>
+                 
+                 {/* Price and Delivery */}
+                 <div className="flex items-center justify-between">
+                   <div className="space-y-1">
+                     <span className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+                       {item.price}
+                     </span>
+                     <div className="flex items-center gap-1 text-xs text-green-600 dark:text-green-400">
+                       <Truck className="w-3 h-3" />
+                       <span className="font-medium">{item.delivery}</span>
+                     </div>
+                   </div>
+                   <div className="text-right">
+                     <div className="text-xs text-gray-500 dark:text-gray-400">Save 25%</div>
+                     <div className="text-xs text-gray-400 dark:text-gray-500 line-through">$24.99</div>
+                   </div>
+                 </div>
+                 
+                 {/* Enhanced Action Button */}
+                 <button className="w-full py-3 text-sm font-bold text-white rounded-xl bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 transition-all duration-300 hover:scale-105 hover:shadow-lg flex items-center justify-center gap-2 group">
+                   <ShoppingCart className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                   Add to Cart
+                 </button>
+               </div>
             </div>
           ))}
         </div>
